@@ -21,7 +21,7 @@ def for_count_character(text, char):
     
     for c in text: # c | H, e, l, l, o, , ,' ', W, o, r, l, d
         print(c)
-        # 비교햇을 때, 동일하면
+        # 비교했을 때, 동일하면
         if c == char :
             # 숫자 1 증가 -> 어딘가에 수를 담아서
             result = result + 1
@@ -87,7 +87,7 @@ def for_min_max(numbers):
         if max_val < num:
             max_val = num
 
-    return min_val, max_va
+    return min_val, max_val
 result = find_min_max([3, 1, 7, 2, 5])
 print(result) # (1, 7)
 
@@ -111,7 +111,7 @@ print(result)
 
 def reverse_string(word):
     # 일단 뒤집힌 문자열 리스트로 만들기
-    reversed_list = list(revrsed(text))
+    reversed_list = list(reversed(text))
 
     # 최종 결과값
     result = ""
@@ -125,7 +125,7 @@ def reverse_string(word):
 result = reverse_string("Hello, World!")
 # for i in result:
 #     return i
-print(list(result(reversed("Hello, World!")))
+print(list(result(reversed("Hello, World!"))))
 
 
 # join 사용하기
