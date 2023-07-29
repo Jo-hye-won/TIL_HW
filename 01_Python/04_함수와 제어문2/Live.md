@@ -1,4 +1,4 @@
-# 제어문(조건문, 반복문)
+# 제어문(조건문, 반복문) _ Control of Statement
 > 코드의 실행 흐름을 제어하는 데 사용되는 구문
 - '조건'에 따라 코드 블록을 실행하거나 또는 실행하지 않거나  '반복'적으로 코드를 실행
 
@@ -14,11 +14,11 @@
 
 ```bash
 if 표현식:
-   코드블록
+     코드블록
 elif 표현식:
-    코드블록
+     코드블록
 else: # 표현식 존재하지 않음 / 위의 모든 case가 아닌 경우
-    코드블록
+     코드블록
 
  
 a=5
@@ -69,11 +69,22 @@ else:
 ```
 
 ### 홀수/짝수
+```python
+num = int(input('숫자를 입력하세요 : '))
+
+# if statement
+# num 이 홀수라면(2로 나눈 나머지가 1이라면)
+
+if num % 2 == 1:  # 이게 훨씬 더 명시적!
+# if num % 2:         # 결과가 1이 되기 때문에 이렇게 조건해도 된다.
+    print('홀수입니다.')
+
+# num 이 홀수가 아니라면(짝수면)
+else:
+    print('짝수입니다.')
 ```
 
-```
-
-## 2. 반복문
+## 2. 반복문(Loop Statement)
 > 주어진 코드 블록을 여러 번 반복해서 실행하는 구문
 - 특정 작업을 반복적으로 수행 : 종료 조건이 없음
 - 주어진 조건이 참인 동안 반복해서 실행 : 조건이 Flase 면 종료됨(종료조건이 있음)
@@ -99,16 +110,41 @@ for 변수 in 반복 가능한 객체:
 - 리스트 내 첫 항목이 반복 변수에 할당되고 코드블록이 실행
 - 다음으로 반복 변수에 리스트의 2번째 항목이 할당되고 코드블록이 다시 실행
 - ... 마지막으로 반복 변수에 리스트의 마지막 요소가 할당되고 코드블록이 실행
-```bash
+
+```python
 items = ['apple', 'banana',  'coconut']
+ for item in items:
+        print(item) 
+    """
+    apple
+    banana
+    coconut
+    """
 
 country = 'Korea' #  문자열 순회
+for char in country:
+    print(char)
+"""
+K
+o
+r
+e
+a
+"""
+
 for i in range(5) # range 순회
+"""
+0
+1
+2
+3
+4
+"""
 ```
 
 ### 인덱스로 리스트 순회 
 > 리스트의 요소가 아닌 인덱스로 접근하여 해당 요소들을 변경하기
-```bash
+```python
 numbers = [4, 6, 10, -8, 5]
 for i in range(len(numbers)):
   numbers[i] = numbers[i] * 2
@@ -127,12 +163,12 @@ for outer in outers:    # outer로 올라간다.
 
 # A,c -> A,d -> B,c -> B,d
 ```
-- print가 호출되는 횟수 -> len(outers) * len(inners)
+- print가 호출되는 횟수 => len(outers) * len(inners)
 - 안쪽 반복문은 outers 리스트의 각 항목에 대해 한 번씩 실행됨
 
 ### 중첩 리스트 순회
 > 안쪽 리스트 요소에 접근하려면 바깥 리스트를 순회하면서 중첩 반복을 사용해 각 안쪽 반복을 순회
-```bash
+```python
 elements = [['A','B'], ['c','d']]
 for elem in elements:
   for item in elem:
@@ -142,7 +178,7 @@ for elem in elements:
 
 
 ### 2. while(조건이 참일동안 계속 반복)
-> 주어진 조건식이 참인 동안 코드를 반복해서 실행 == 조건이 거짓이 될 때까지 반복
+> 주어진 조건식이 참인 동안 코드를 반복해서 실행 == 조건이 거짓(False)이 될 때까지 반복
 
 - 기본구조
 while 조건식:
@@ -164,8 +200,6 @@ print('끝')
 > while문을 사용한 특정 입력 값에 대한 종료 조건 활용하기
 
 ```bash
-주피터 노트북?
-
 number = int(input('양의 정수를 입력해주세요.: '))
 
 while number <= 0:  # 0보다 큰 수가 들어와야 종료됨
@@ -186,9 +220,10 @@ print('잘했습니다!')
 # 잘했습니다!
 ```
 
-- while문은 반드시 종료 조건이 필요!!
+- while문은 반드시 '종료 조건'이 필요!!
 > for = iterable의 요소를 하나씩 순회하며 반복
-  while = 주어진 조건식이 참인 동안 반복
+
+> while = 주어진 조건식이 참인 동안 반복
 
 
 ### 적절한 반복문 활용하기 
@@ -224,15 +259,15 @@ print('잘했습니다!')
 
 ```
 
-```bash
+```python
 # 짝수 찾으면 종료
 
-numbers = [1, 3,5,6,7,9,10,11]
+numbers = [1, 3, 5, 6, 7, 9, 10, 11]
 found_even = False
 
 for num in numbers:
     if num % 2 == 0:
-      print('첫 번째 짝술ㄹ 찾았습니다: ', num)
+      print('첫 번째 짝수를 찾았습니다: ', num)
       found_even = True
       break
   
@@ -251,24 +286,44 @@ fr num in numbers:
 
 ```
 - break와 continue를 남용하는 것은 코드의 가독성을 저하시킬 수 있음
-- 특정 종료 조건을 만들어  break을 대신하거나, if문을 사용해 continue처럼 코드를 건너 뛸 수도 있음
+- 특정 종료 조건을 만들어  break을 대신하거나, 
+- if문을 사용해 continue처럼 코드를 건너 뛸 수도 있음
 - 약간의 시간이 들더라도 가능한 코드의 가독성을 유지하고, 코드의 의도를 명확하게 작성하도록 노력하는 것이 중요
 
 
 ## List Comprehension
 > 간결하고 효율적인 ★리스트 생성 방법★
+- 사용 전
+    ```python
+    numbers = [1, 2, 3, 4, 5]
+    squared_numbers = []
+
+    for num in numbers:
+        squared_numbers.append(num**2)
+
+    print(squared_numbers)  # [1, 4, 9, 16, 25]
+    ```
+
+- 사용 후
+    ```python
+    numbers = [1, 2, 3, 4, 5]
+    squared_numbers = [num**2 for num in numbers]
+
+    print(squared_numbers)  # [1, 4, 9, 16, 25]
+    ```
 
 ### 구조
-```bash
+```python
 [expression for 변수 in iterable]
 [expression for 변수 in iterable if 조건식]
 
 list(expression for 변수 in iterable) # <- 리스트 함수
+list(expression for 변수 in iterable if 조건식)
 
 ```
 
 ### 활용
-```bash
+```python
 # 0-9 요소를 가지는 리스트 만들기
 # 1. 일반적인 방법
 new_list = []
@@ -291,8 +346,7 @@ new_list_3 = [i if i % 2 == 1 else str(i) for i in range(10)]
 
 - 정수 1,2,3을 가지는 새로운 리스트 만들기
 
-
-```bash
+```python
 
 numbers = ['1', '2', '3']
 
@@ -334,15 +388,19 @@ else:
 ```
 
 ### 3. 무한 루프에서 조건이 충족되지 않을 때 pass를 사용하여 루프를 계속 진행하는 방법
-```bash
-while True:
-
-
+```python
+    while True:
+        if condition:
+            break
+        elif condition:
+            pass  # 루프 계속 진행
+        else:
+            print('..')
 ```
 
 ## enumerate(iterable, start=0)
 > iterable 객체의 각 요소에 대해 인덱스와 함께 반환하는 내장함수
-```bash
+```python
 # enumerate
 result = ['a', 'b', 'c']
 

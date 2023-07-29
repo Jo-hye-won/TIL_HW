@@ -10,6 +10,3 @@ False
 {}
 None
 
-
-## Type Conversion
-

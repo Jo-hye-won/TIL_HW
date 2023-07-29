@@ -1,11 +1,16 @@
+# elements = [['A','B'], ['c','d']]
+# for elem in elements:
+#   for item in elem:
+#     print(item,end=" ")
+
 # # 홀수 /짝수
 # num = int(input('숫자를 입력하세요 : '))
 
 # # if statement
 # # num 이 홀수라면(2로 나눈 나머지가 1이라면)
 
-# if num % 2 == 1:  # 이게 훨씬 더 명시적!
-# # if num % 2:         # 결과가 1이 되기 때문에 이렇게 조건해도 된다.
+# # if num % 2 == 1:  # 이게 훨씬 더 명시적!
+# if num % 2:         # 결과가 1이 되기 때문에 이렇게 조건해도 된다.
 #     print('홀수입니다.')
 
 # # num 이 홀수가 아니라면(짝수면)
@@ -74,17 +79,17 @@
 
 # While 안에 for문 넣기
 
-ye_ls = []
-num = 0
-while num != 5 :
-    for i in range(9):
-        if i % 2 == 1:
-            ye_ls.append(i)  # [1,2] +[3,4] = [1,2,3,4]로 리스트 합칠수도 있다.
+# ye_ls = []
+# num = 0
+# while num != 5 :
+#     for i in range(9):
+#         if i % 2 == 1:
+#             ye_ls.append(i)  # [1,2] +[3,4] = [1,2,3,4]로 리스트 합칠수도 있다.
         
-    num += 1
-print(num)
-print(ye_ls)
-# print('='* 20)
+#     num += 1
+# print(num)
+# print(ye_ls)
+# # print('='* 20)
 
 
 # ye_ls = []
@@ -110,14 +115,14 @@ print(ye_ls)
 
 
 
-list = [1,2,3,4,5]
-while True:
-  for i in list:
-    if i % 2 == 0:
-      print(i)
-  break
+# list = [1,2,3,4,5]
+# while True:
+#   for i in list:
+#     if i % 2 == 0:
+#       print(i)
+#   break
 
-print('=='* 20)
+# print('=='* 20)
 
 
 # num =0
@@ -141,3 +146,13 @@ print('=='* 20)
 #            if list_ % 2 == 0:
 #              print(list_)
 #             list_ += 1
+
+
+
+result = ['a', 'b', 'c']
+
+# print(enumerate(result)) # <enumerate object at 0x000001E6D63A0F80>
+# print(list(enumerate(result))) # 요소 하나하나가 튜플로 되어있음, 인덱스와 함께 있음
+
+for index, element in enumerate(result):
+  print(index, element, end ="\n")

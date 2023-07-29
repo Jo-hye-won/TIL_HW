@@ -22,7 +22,7 @@ print(sum)
 
 ```
 ## 내장 함수(Bulit-in function)
-> 파이썬이 기본적으로 제공하는 함수(별도의 import 없이 바로 사용 가능)
+> 파이썬이 기본적으로 제공하는 함수(별도의 import 없이 바로 사용 가능함)
 
 - 예시 : 절대값을 만드는 함수 abs / print()도 내장 함수
 
@@ -36,7 +36,7 @@ print(result) #1
 
 ### 함수 호출(function call)
 > 함수를 실행하기 위해 함수의 이름을 사용하여 해당 함수의 코드 블록을 실행하는 것
-
+- function_names(arguments) 형식으로 호출함
 
 ### 함수 구조
 - 들어가는 값 : input = 매개변수(parameter)
@@ -124,6 +124,7 @@ result = add(a,b): # a와b는 인자
 ## 1. Positional Arguments (위치인자)
 > 함수 호출 시 인자의 위치에 따라 전달되는 인자
 - ★ 위치인자는 함수 호출 시 반드시 값을 전달해야 함
+
 ```bash
             1   2
 def greet(name, age): # name은 첫번째 인자, age는 두번째 인자 # 위치인자
@@ -148,7 +149,7 @@ greet('Charlie', 40) # 이렇게 둘 다 넣게 되면 30이 아니라 40 나온
 > 함수 호출 시 인자의 이름과 함께 값을 전달하는 인자
 - 매개변수와 인자를 일치시키지 않고, 특정 매개변수에 값을 할당할 수 있음
 - 인자의 순서는 중요하지 않으며, 인자의 이름을 명시하여 전달
-- 단, 호출 시 키워드 인자는 위치 인자 뒤에 위치해야 함
+- 단, 호출 시 키워드 인자는 위치 인자 뒤에 위치해야 함 ★★★
 ```bash
 def greet(name, age):  # 위치 인자로 돌아감
     print(f'안녕하세요, {name}님! {age}살이시군요.')
@@ -182,6 +183,7 @@ calculate_sum(1, 2, 3)
 ## 5. Arbitrary Keyword Argument Lists (임의의 키워드 인자 목록)
 > 정해지지 않은 개수의 키워드 인자를 처리하는 인자
 - 함수 정의 시 매개변수 앞에 '**'를 붙여 사용하며, 여러 개의 인자를 dictionary로 묶어 처리
+
 ```bash
 def calculate_sum(**kwargs):
     print(kwargs)  # {'name': Alice', 'age'=30, 'address'='korea'}
@@ -193,12 +195,12 @@ calculate_sum(name='Alice', age=30, address='korea')
 ### 함수 인자 권장 작성순서
 > 위치 - 기본 - 가변 - 키워드 - 가변 키워드
 - 호출 시 인자를 전달하는 과정에서 혼란을 줄일 수 있도록 함
-- 단, 모든 상황에 적용되는 절대적인 규칙은 아니며, 상황에 따라 유연하게 조정될 수 있음
+- 단, 모든 상황에 적용되는 절대적인 규칙은 아니며, 상황에 따라 유연하게 조정될 수 있음★
         가변인자        기본인자
 ​print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
-
-# Python의 범위(Scope)
+# 함수와 Scope
+## Python의 범위(Scope)
 > 함수는 코드 내부에 local scope(지역 함수)를 생성하며, 그 외의 공간인 global scope(전역함수)로 구분
 - scope 
 1. global scope : 코드 어디에서든 참조할 수 있는 공간
@@ -210,7 +212,7 @@ calculate_sum(name='Alice', age=30, address='korea')
 
 ### Scope 예시
 - num은 local scope에 존재하기 때문에 global 에서 사용할 수 없음
-- 이는 변수의 수명주기와 연관이 있음
+- 이는 변수의 '수명주기'와 연관이 있음
 ```bash
 de func():
     num = 20  # <- 지역에 존재 
@@ -223,7 +225,7 @@ print('global', num) # NameError : name 'num' is not defined
 
 ### 변수 수명주기(lifecycle)
 > 변수의 수명주기는 변수가 선언되는 위치와 스코프에 따라 결정됨
-1. bulit-in scope : 파이썬이 실행된 이후부터 영원히 유지  ex) 내장함수
+1. bulit-in scope : 파이썬이 실행된 이후부터 영원히 유지  ex. 내장함수
 2. global scope : 모듈이 호출된 시점 이후 혹은 인터프리터가 끝날 때까지 유지
 3. local scope : 함수가 호출될 때 생성되고, 함수가 종료될 때까지 유지
 
@@ -236,12 +238,23 @@ print('global', num) # NameError : name 'num' is not defined
  3. Global scope : 최상단에 위치한 범위
  4. Built-in scope : 모든 것을 담고 있는 범위(정의하지 않고 사용할 수 있는 모든 것)
 
- ★ 함수 내에서는 바깥 Scope의 변수에 접근 가능하나 수정은 할 수 없음
+ ★ 함수 내에서는 바깥 Scope의 변수에 접근 가능하나 수정은 할 수 없음 ★
 
 
 ### LEGB Rule 예시
 - sum이라는 이름을 global scope에서 사용하게 되면서 기존에 built-in scope에 있던 내장함수 sum을 사용하지 못하게 됨
 - sum을 참조 시 LEGB Rule에 따라 global에서 먼저 찾기 때문
+
+```python
+    print(sum) # <built-in function sum>
+    print(sum(range(3))) # 3
+
+    sum = 5 # global scope에서 sum이름을 사용함!
+
+    print(sum) # 5
+    print(sum(range(3))) # TypeError: 'int' object is not callable
+    # 내장함수 sum을 사용하지 못하게 됨!
+```
 
 ```bash
 a = 1
@@ -255,7 +268,7 @@ def enclosed():
         print(a,b,c)    # 10 2 500-*
 
     local(500) # 호출된 시점에 500-*
-    print(a, b, c)   # 10 2 3     얘는 enclosed()에서 호출됨 a는 10, b를 찾앗더니 없어서 global로 올라가ㅓ서 2 가져오고 c는 3이 있어서 3
+    print(a, b, c)   # 10 2 3     얘는 enclosed()에서 호출됨 a는 10, b를 찾앗더니 없어서 global로 올라가서 2 가져오고 c는 3이 있어서 3
 
 enclosed()
 print(a, b)  # 1 2
@@ -274,7 +287,7 @@ def increment():
     num += 1
 
 print(num)  # 0
-increment()
+increment()  # 함수 호출
 print(num) # 1  #이렇게 전역변수를 함수에서 수정할 수 있게 됨
 
 ```
@@ -305,14 +318,22 @@ num = 0
  
 def increment():
     # 키워드 선언도 하지 않고 하면 안됨
-
+     # SyntaxError: name 'num' is used prior to global declaration
     print(num)
     global num
     num +=1
 
 # 2. 매개변수에 global 사용 불가
+```python
+    num = 0
 
+
+    def increment(num):
+        # "num" is assigned before global declaration
+        global num
+        num += 1
 ```
+
 
 
 > global키워드는 가급적 사용하지 않는 것을 권장
@@ -329,6 +350,7 @@ def increment():
 - factorial 함수는 자기 자신을 재귀적으로 호출하여 입력된 숫자 n의 팩토리얼을 계산
 - 재귀 호출은 n이 0이 될 때까지 반복되며, 종료 조건을 설정하여 재귀 호출이 멈추도록 함
 - 재귀 호출의 결과를 이용해 문제를 작은 단위의 문제로 분할하고, 분할된 문제들의 결과를 조합하여 최종 결과를 도출
+
 - 무한 호출에 걸릴 위험 !!! ★
 1. 종료 조건을 명확히
 2. 반복되는 호출이 종료 조건을 향하도록
@@ -375,16 +397,45 @@ K, N, M = map(int, input().split())
  ### 2. zip(*iterables)
  > 임의의 iterable을 모아 튜플을 원소로 하는 zip object를 반환
 
-```bash
+```python
+girls = ['jane', 'ashley']
+boys = ['peter', 'jay']
+pair = zip(girls, boys)
+
+print(pair) # <zip object at 0x000001C76DE58700>
+
+# 두 개의 리스트를 리스트로 변환하기
+print(list(pair)) # [('jane', 'peter'), ('ashley', 'jay')]
+
 # 두 개의 리스트를 딕셔너리로 변환하기
-
-
-
+print(dict(pair)) # {'jane': 'peter', 'ashley': 'jay'}
 ```
 
 ### 3. lambda 함수 
 > 이름없이 정의되고 사용되는 익명 함수 
+
 > lambda  매개변수: 표현식
+- lambda키워드 : 람다 함수를 선언하기 위해 사용되는 키워드
+
+- 매개변수 : 함수에 전달되는 매개변수들, 여러 개의 매개변수가 있을 경우 쉼표로 구분
+
+- 표현식 : 함수의 실행되는 코드 블록으로, 결과값을 반환하는 표현식으로 
+
+```python
+  # 람다 함수 미적용 코드
+    def addition(x, y):
+        return x + y
+
+    result = addition(3, 5)
+    print(result) # 8
+
+    # 람다 함수 적용 코드
+    addition = lambda x, y: x + y
+
+    result = addition(3, 5)
+    print(result) # 8
+```
+
 - 간단한 연산이나 함수를 한 줄로 표현할 때 사용
 - 함수를 매개변수로 전달하는 경우에도 유용하게 활용
 - 일회성으로 사용할때
@@ -394,30 +445,173 @@ K, N, M = map(int, input().split())
 ## packing(패킹)
 > 여러 개의 값을 하나의 변수에 묶어서 담는 거
 - 변수에 담긴 값들은 튜플의 형태로 묶임
-- *을 활용한 패킹 : *b는 남은 요소들을 리스트로 패킹하여 할당
-```bash```
+```python
+    packed_values = 1, 2, 3, 4, 5
+    print(packed_values)  # (1, 2, 3, 4, 5)
+ ```
 
-- print함수에 임의의 가변 인자를 작성할 수 있었던 이유
+- *을 활용한 패킹 : *b는 남은 요소들을 리스트로 패킹하여 할당
+```python
+    numbers = [1, 2, 3, 4, 5]
+    a, *b, c = numbers
+    
+    print(a) # 1
+    print(b) # [2, 3, 4]
+    print(c) # 5
+```
+
+> print함수에 임의의 가변 인자를 작성할 수 있었던 이유
+ ```python
+    print('hello') # hello
+    
+    print('you', 'need', 'python') # you need python
+```
 
 ## 언패킹
 > 패킹된 변수의 값을 개별적인 변수로 분리하여 할당하는 것
+
+- 튜플이나 리스트 등의 객체의 요소들을 개별 변수에 할당 
+```python
+    packed_values = 1, 2, 3, 4, 5
+    a, b, c, d, e = packed_values
+    print(a, b, c, d, e)  # 1 2 3 4 5
+ ```
+
 - *는 리스트의 요소를 언패킹
-```bash 
-names = 
+```python
+    names = ['alice', 'jane', 'peter']
+    print(*names)  # alice jane peter
 ```
+
 - **는 딕셔너리 키-값 쌍을 함수의 키워드 인자로 언패킹
+```python
+    def my_function(x, y, z):
+        print(x, y, z)
+
+    my_dict = {'x': 1, 'y': 2, 'z': 3}
+    my_function(**my_dict)  # 1 2 3
+```
+### *.** 패킹/언패킹 연산자 정리
+- *
+    - 패킹 연산자로 사용될 때, 여러 개의 인자를 하나의 튜플로 묶는 역할
+    - 언패킹 연산자로 사용될 때, 시퀀스나 반복 가능한 객체를 각각의 요소로 언패킹하여 함수의 인자로 전달
+- **
+    - 언패킹 연산자로 사용될 때, 딕셔너리의 키-값 쌍을 키워드 인자로 언패킹하여 함수의 인자로 전달하는 역할
+
 
 # 모듈
 > 한 파일로 묶인 변수와 함수의 모음 특정한 기능을 하는 코드가 작성된 파이썬 파일(.py)
+- 이미 다른 프로그래머가 이미 작성해둔 수천, 수백만 줄의 코드를 사용하는 것은 생산성에서 매우 중요!
 
 ### 모듈 가져오기 
 > 모듈 내 변수와 함수에 접근하려면 import문이 필요
+
+```python
+    import math
+    
+    print(math.pi) 
+    print(math.sqrt(4)) 
+```
+
 - 내장함수 help를 통해 모듈에 무엇이 들어있는지 확인 가능
 - '.(dot)'은 점의 왼쪽 객체에서 "점의 오른쪽 이름을 찾아라" 라는 의미의 연산자
 - from 절을 활용해 특정 모듈을 미리 참조하고 어떤 요소를 import 할지 명시
+```python
+    from math import pi, sqrt
+  
+    print(pi)   # 3.141592653589793
+    print(sqrt(4))   # 2.0
+```
+> ★ 만약 서로 다른 모듈이 같은 이름의 함수를 제공할 경우 문제 발생!! 
+-> 마지막에 import된 이름으로 대체됨
+ ```python
+    from math import pi, sqrt
+    from my_math import sqrt
+
+    # 그래서 모듈 내 모든 요소를 한번에 import 하는 * 표기는 권장하지 않음
+    
+    from math import *
+```
+## 사용자 정의 모듈
+- 직접 정의한 모듈 사용하기
+1. 모듈 my_math.py작성
+2. 두 수의 합을 구하는 add함수 작성
+3. my_math 모듈 import 후 add 함수 호출
+
+* as : 별명
+
+### 파이썬 표준 라이브러리
+#### 파이썬 표준 라이브러리 `Python Standard Library`
+파이썬 언어와 함께 제공되는 다양한 모듈과 패키지의 모음
+
+> 참고 문서 : https://docs.python.org/ko/3/library/index.html
 
 
-## 패키지
+## 패키지(Package)
 > 관련된 모듈들을 하나의 디렉토리에 모아 놓은 곳
 
-as : 별명
+### 패키지 사용하기
+- 아래와 같은 디렉토리 구조로 작성
+- 패키지 3개 : my_package, math, statistics
+- 모듈 2개 : my_math, tools
+- 디렉토리 전체 구조
+    ```markdown
+    📦...
+     ┣ 📜sample.py
+     ┣ 📂my_package
+     ┃ ┣ 📂math
+     ┃ ┃ ┗ 📜my_math.py
+     ┃ ┣ 📂statistics
+     ┃ ┃ ┗ 📜tools.py
+    ```
+
+- 각 패키지의 모듈을 import 하여 사용하기
+    ```python
+    # sample.py
+
+    from my_package.math import my_math
+    from my_package.statistics import tools
+
+
+    print(my_math.add(1, 2))  # 3
+    print(tools.mod(1, 2))  # 1
+    ```
+
+### PSL 내부 패키지 
+> 설치 없이 바로 import하여 사용가능
+
+### 외부 패키지 
+> pip 사용하여 설치 후 import 필요
+
+#### pip `파이썬 패키지 관리자`
+외부 패키지들을 설치하도록 도와주는 파이썬의 패키지 관리 시스템
+
+- PyPI(Python Package Index)에 저장된 외부 패키지들을 설치
+> https://pypi.org/
+
+#### 패키지 설치
+- 최신 버전 / 특정 버전 / 최소 버전을 명시하여 설치할 수 있음
+
+    ```bash
+    $ pip install SomePackage
+    $ pip install SomePackage==1.0.5
+    $ pip install SomePackage>=1.0.4
+    ```
+
+#### requests 외부 패키지 설치 및 사용 예시
+
+```bash
+$ pip install requests
+```
+
+```python
+import requests
+
+url = 'https://random-data-api.com/api/v2/users'
+response = requests.get(url).json()
+
+print(response)
+```
+#### 패키지 사용 목적
+- 모듈들의 이름공간은 구분하여 충돌을 방지
+- 모듈들을 효율적으로 관리하고 재사용할 수 있도록 돕는 역할
