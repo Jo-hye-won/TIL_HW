@@ -50,59 +50,126 @@
 blood_types =['A','B','A','O','AB','AB','O','A','B','O','B','O','B','AB']
 
 
-# 1. []으로 풀기
-new_dict ={}
-# blood_types을 순회하면서
-for blood_type in blood_types:
-    # 기존에 키가 이미 존재한다면,
-    if blood_type in new_dict:
-        # 기존에 키의 값을 +1 증가
-        new_dict[blood_type] += 1
+# # 1. []으로 풀기
+# new_dict ={}
+# # blood_types을 순회하면서
+# for blood_type in blood_types:
+#     # 기존에 키가 이미 존재한다면,
+#     if blood_type in new_dict:
+#         # 기존에 키의 값을 +1 증가
+#         new_dict[blood_type] += 1
         
-    # 키가 존재하지 않는다면(처음 설정되는 키)
-    else:
-        new_dict[blood_type] = 1 
-         # blood_type에서 빼온 것을 key로 하고 거기에 값을 1로 준다.
-print(new_dict)
+#     # 키가 존재하지 않는다면(처음 설정되는 키)
+#     else:
+#         new_dict[blood_type] = 1 
+#          # blood_type에서 빼온 것을 key로 하고 거기에 값을 1로 준다.
+# print(new_dict)
 
-# 2. .get()으로 풀기
-new_dict ={}
-# blood_types을 순회하면서
-for blood_type in blood_types:
+# # 2. .get()으로 풀기
+# new_dict ={}
+# # blood_types을 순회하면서
+# for blood_type in blood_types:
     
-    new_dict[blood_type] = new_dict.get(blood_type, 0) + 1
-    # # 기존에 키가 이미 존재한다면,
-    # if blood_type in new_dict:
-    #     # 기존에 키의 값을 +1 증가
-    #     new_dict[blood_type] += 1       
-    # # 키가 존재하지 않는다면(처음 설정되는 키)
-    # else:
-    #     new_dict[blood_type] =1
-print(new_dict)
+#     new_dict[blood_type] = new_dict.get(blood_type, 0) + 1
+#     # # 기존에 키가 이미 존재한다면,
+#     # if blood_type in new_dict:
+#     #     # 기존에 키의 값을 +1 증가
+#     #     new_dict[blood_type] += 1       
+#     # # 키가 존재하지 않는다면(처음 설정되는 키)
+#     # else:
+#     #     new_dict[blood_type] =1
+# print(new_dict)
 
 
-# .setdefault()
-new_dict ={}
-for blood_type in blood_types:
-    new_dict.setdefault(blood_type, 0)
-    new_dict[blood_type] += 1
-print(new_dict)
+# # .setdefault()
+# new_dict ={}
+# for blood_type in blood_types:
+#     new_dict.setdefault(blood_type, 0)
+#     new_dict[blood_type] += 1
+# print(new_dict)
 
 
-# a = [1,2,3]
+# # a = [1,2,3]
 
-# # 슬라이싱
-# b = a[:]
-# b[0] = 100
-# print(a,b)
+# # # 슬라이싱
+# # b = a[:]
+# # b[0] = 100
+# # print(a,b)
 
-# # copy
+# # # copy
+# # c = a.copy()
+# # c[0] = 100
+# # print(a,c)
+
+
+# # # 얕은 복사의 한계
+# # a = [1,2,[1,2]]    # 리스트 안에 리스트(단계가 깊어졌음)
+# # b = a[:]
+# # b[2][0] = 999
+# # print(a,b)  # 위에서는 b만 바꼈었는데 지금은 a도 바뀌어버림!!
+
+
+# # a = [1,2,[1,2]]
+# # c = a.copy()    # copy를 해도 그렇다.
+# # c[2][0] = 999
+# # print(a,c)
+
+# # # 세번째 리스트에서 같은 주소를 참고하고 있어서 그렇다(복사 되다가 말았음)
+
+# # # 깊은 복사
+# # import copy  # 모듈 제공해줌
+# # original_list = [1,2,[1,2]]
+
+# # deep_copied_list = copy.deepcopy(original_list)
+
+# # deep_copied_list[2][0] = 999
+# # print(original_list, deep_copied_list)  # 이렇게 하면 원본리스트는 바뀌지 않음
+
+
+
+# # a=[1,2,3]
+# # b= list(a)
+# # print(b)
+
+
+# person = {'name': 'Alice', 'age': 25}
+
+# person(['name','age'])
+# print(person.keys())
+# # for key in person.keys():
+# #   print(key)    
+
+# person = {'name':'Alice', 'age':25}
+
+# # print(person.setdefault('country','KOREA'))  # KOREA
+# # print(person)  # {'name': 'Alice', 'age': 25, 'country': 'KOREA'}
+
+# print(person.setdefault('age', 50))
+# # print(person)
+
+# person = {'name':'Alice', 'age':25}
+# other_person = {'name':'Jane', 'gender':'Female'}
+
+# person.update(other_person)
+# # print(person) # {'name': 'Jane', 'age': 25, 'gender': 'Female'}
+
+# person.update(age=50)
+# # print(person)  # {'name': 'Jane', 'age': 50, 'gender': 'Female'}
+
+# person.update(country="KOREA")
+# print(person) 
+# # {'name': 'Jane', 'age': 50, 'gender': 'Female', 'country': 'KOREA'}
+
+# person.update(age=50, country="KOREA")
+# print(person)
+# # {'name': 'Jane', 'age': 50, 'gender': 'Female', 'country': 'KOREA'}
+
+
+# a = [1, 2, [1, 2]]
 # c = a.copy()
 # c[0] = 100
 # print(a,c)
 
-
-# # 얕은 복사의 한계
 # a = [1,2,[1,2]]    # 리스트 안에 리스트(단계가 깊어졌음)
 # b = a[:]
 # b[2][0] = 999
@@ -114,19 +181,11 @@ print(new_dict)
 # c[2][0] = 999
 # print(a,c)
 
-# # 세번째 리스트에서 같은 주소를 참고하고 있어서 그렇다(복사 되다가 말았음)
+import copy  # 모듈 제공해줌
 
-# # 깊은 복사
-# import copy  # 모듈 제공해줌
-# original_list = [1,2,[1,2]]
+original_list = [1,2,[1,2]]
 
-# deep_copied_list = copy.deepcopy(original_list)
+deep_copied_list = copy.deepcopy(original_list)
 
-# deep_copied_list[2][0] = 999
-# print(original_list, deep_copied_list)  # 이렇게 하면 원본리스트는 바뀌지 않음
-
-
-
-# a=[1,2,3]
-# b= list(a)
-# print(b)
+deep_copied_list[2][0] = 999
+print(original_list, deep_copied_list)  

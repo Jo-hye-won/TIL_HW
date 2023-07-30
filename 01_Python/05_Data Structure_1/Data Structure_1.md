@@ -1,8 +1,8 @@
-## 데이터 구조
+## 데이터 구조(Data Structure)
 > 여러 데이터를 효과적으로 사용, 관리하기 위한 구조(str, list, dict 등)
 
 ### 데이터 구조 활용 
-> 문자열, 리스트, 딕셔너리 등 각 데이터 구조의 '메서드를 호출'하여 다양한 기능을 활용하기
+> 문자열, 리스트, 딕셔너리 등 각 데이터 구조의 '메서드를 호출'하여 다양한 기능을 활용
 
 
 ### 메서드(method)
@@ -12,7 +12,7 @@
 ### 메서드 특징
 - 메서드는 클래스(class) 내부에 정의되는 함수
 - 클래스는 파이썬에서 '타입을 표현하는 방법'이다.
-- 예를들어 help함수를 통해 str을 호출해보면 clas였다는 것을 확인 가능
+- 예를들어 help함수를 통해 str을 호출해보면 class였다는 것을 확인 가능
 - 어딘가(클래스)에 속해 있는 함수이며, 각 데이터 타입별로 다양한 기능을 가진 메서드가 존재 
 
 
@@ -42,7 +42,7 @@ class list(object)
 
 ### 메서드 호출 방법
     데이터 타입 객체.메서드()
- ex)        'hello'.capitalize() # 첫번째 문자가 대문자이고 나머지는 소문자로 된 문자열의 '복사본'을 반환함 => 원본은 그대로 있음. 
+ ex) 'hello'.capitalize() # 첫번째 문자가 대문자이고 나머지는 소문자로 된 문자열의 '복사본'을 반환함 => 원본은 그대로 있음. 
 
 
  ## 시퀀스 데이터 구조
@@ -85,32 +85,84 @@ $ print(string2.isalpha()) # False
 
 ### 1.s.replace(old,new[,count]) 
 - 바꿀 대상 글자를 새로운 글자로 바꿔서 반환 
-- [] 안에 있는건 선택인자 <- 파이썬 문법이 아님! -  ebnf 표기법(추가 규칙)
+- [] 안에 있는건 선택인자 <- 파이썬 문법이 아님! -  ebnf 표기법(추가 규칙) / [,count]는 써도 되고 안써도 되는 것!
 - 필수인자는 2개 (old, new)
-- [,count]
+
+```python
+    text = 'Hello, world!'
+    new_text = text.replace('world', 'Python')
+    print(new_text) # Hello, Python!
+```
 
 ### 2. .strip ([chars]) 
 > 문자열의 시작과 끝에 있는 공백 혹은 지정한 문자를 제거
 
+```python
+    text = '   Hello, world!   '
+    new_text = text.strip()
+    print(new_text) # 'Hello, world!'
+```
+
 ### 3. .split(sep=None, maxsplit = -1) ★★★
 > 지정한 문자를 구분자로 문자열을 분리하여 문자열의 리스트로 반환
+```py
+    text = 'Hello, world!'
+    words = text.split(',')
+    print(words) # ['Hello', ' world!']
+```
 
 ### 4. 'seperator'.join([iterable]) ★★★
 > iterable 요소들을 원래의 문자열을 구분자로 이용하여 하나의 문자열로 연결
 - 다른 메서드들과 다르게 seperator이 괄호안에 있지 않고 앞에 나와있음.
+```py
+    words = ['Hello', 'world!']
+    text = '-'.join(words)
+    print(text) # 'Hello-world!'
+```
 
-### 5. .capitalize / title / upper / swapcase()
+### 5. .capitalize()
+> 가장 첫번째 글자를 대문자로 변경
 
+### 6. title()
+> 문자열 내 띄어쓰기 기준으로 각 단어의 첫 글자는 대문자로,
+나머지 문자는 소문자로 변환
+
+### 7. upper() : 모두 대문자로 / slower() : 모두 소문자로
+### 8. swapcase() : 대,소문자 서로 변경
+
+```python
+text = 'heLLo, woRld!'
+new_text1 = text.capitalize()
+new_text2 = text.title()
+new_text3 = text.upper()
+new_text4 = text.swapcase()
+
+print(new_text1) # Hello, world!
+print(new_text2) # Hello, World!
+print(new_text3) # HELLO, WORLD!
+print(new_text4) # HEllO, WOrLD!
+```
 
 
 >  메서드는 이어서 사용 가능!! (chained한다고 함)
+```python
+text = 'heLLo, woRld!'
+
+new_text = text.swapcase().replace('l', 'z')
+
+print(new_text) # HEzzO, WOrLD!
+# 먼저 대,소문자가 변경되고 그 중에 소문자인 l을 z로 변경하기
+```
 
 
 ## 리스트 ★★★★
 
 ### 리스트 값 추가 및 삭제 메서드
-- L.append(x) : 리스트 마지막에 항목 x를 추가 ★
-- L.extend(iterable) : 리스트에 다른 반복 가능한 객체의 모든 항목을 추가★
+1. L.append(x) 
+> 리스트 마지막에 항목 x를 추가 ★
+
+2. L.extend(iterable) 
+> 리스트의 끝에 다른 반복 가능한 객체의 모든 '항목'을 추가★
 
 ```bash 
 # extend와 append의 차이
@@ -125,11 +177,18 @@ numbers.extend(numbers2)
 print(numbers)            # [1, 2, 3, 4, 5, 6]
 ``` 
 
-- insert(i,x) : 리스트의 지정한 인덱스 i 위치에 항목 x를 삽입
+3. insert(i,x) 
+> 리스트의 지정한 인덱스 i 위치에 항목 x를 삽입
+```py
+    my_list = [1, 2, 3]
+    my_list.insert(1, 5)
+    print(my_list) # [1, 5, 2, 3]
+```
 
-- remove(x) : 리스트에서 '첫 번째로 일치하는' 항목을 삭제
+4. remove(x) 
+> 리스트에서 '첫 번째로 일치하는' 항목을 삭제, 항목이 존재하지 않을 경우 ValueError
 
-#### pop(i) ★★★
+#### 5. pop(i) ★★★
 > 리스트에서 지정한 인덱스의 항목을 제거하고 '반환' 
 - 작성하지 않을 경우 마지막 항목을 제거
 
@@ -139,27 +198,27 @@ my_list = [1,2,3,4,5]
 item1 = my_list.pop()
 item2 = my_list.pop(0)
 
-print(item1)  #5
-print(item2)  #1
+print(item1)  #5  # 마지막 항목 제거,반환
+print(item2)  #1  # 인덱스 0위치의 항목 제거,반환
 print(my_list) #[2,3,4]
 
 ```
 
-
-- clear() : 리스트의 모든 항목을 삭제 => 빈 리스트가 된다
+6. clear() 
+> 리스트의 모든 항목을 삭제 => 빈 리스트가 된다
 
 
 ### 리스트 탐색 및 정렬 메서드
 
-#### 1. index(x, start, end)
+1. index(x, start, end)
 > 리스트에서 첫번째로 일치하는 항목의 '인덱스'를 반환
 
-#### 2. reverse() ★
+2. reverse() ★
 > 리스트의 순서를 역순으로 변경(정렬 X)
 - 뒤집는 것이지 정렬이 아니다!!!!
 - 역순으로 정렬하는 것이다(X)
 
-#### 3. sort() ★
+3. sort() ★
 > '원본' 리스트를 오름차순으로 정렬 
 - 복사본을 주는 것이 아니다. 반환이 없다.(원본을 바꾼다)
 - 어떠한 변수에 할당하고 있지 않다. 
@@ -171,10 +230,12 @@ print(my_list) #[2,3,4]
 numbers = [3,2,1]
 
 # sort 메서드 
-# print(umbers.sort())  # None -> 복사본을 만들지 않았다. 반환이 없다. 원본을 바꿈
+# print(umbers.sort())  
+# None -> 복사본을 만들지 않았다. 반환이 없다. 원본을 바꿈
 
 # sorted 함수
-print(sorted(numbers)) # [1,2.3] -> 반환이 있다. 원본은 바뀌지 않았다. 
+print(sorted(numbers)) 
+# [1,2.3] -> 반환이 있다. 원본은 바뀌지 않았다. 
 print(numbers)  # [3,2,1]
 
 
@@ -193,8 +254,7 @@ print(result) # (1, 7)
 
 ```
 
-
-#### 4. count(x)
+ 4. count(x)
 > 리스트에서 항목 x가 등장하는 횟수를 반환
 
 
@@ -218,7 +278,7 @@ list1 = numbers
 list2 = numbers[:]
 
 # 3.
-numbers[0] = 100   # 원본의 0번째가 바라보고 있는 방향이 100으로 바뀜(불변타입이라서 값이 바뀌는게 아니라 바라보는 주소가 바뀌는 것)
+numbers[0] = 100  # 원본의 0번째가 바라보고 있는 방향이 100으로 바뀜(불변타입이라서 값이 바뀌는게 아니라 바라보는 주소가 바뀌는 것)
 
 print(list1)  # [100,2,3] -> 원본에 따라서 바뀜
 print(list2)  # [1,2,3] -> 애초에 겉보기만 같고 실제 주소는 아예 다른 방에 들어있는 리스트였기에 그대로이다. 

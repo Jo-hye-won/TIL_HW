@@ -22,16 +22,22 @@
 # print(sorted(numbers)) # [1,2.3] -> 반환이 있다. 원본은 바뀌지 않았다. 
 # print(numbers)  # [3,2,1]
 
-numbers = [1,2,3]
+# numbers = [1,2,3]
 
-# 1. 할당
-list1 = numbers
+# # 1. 할당
+# list1 = numbers
 
-# 2. 슬라이싱 
-list2 = numbers[:]
+# # 2. 슬라이싱 
+# list2 = numbers[:]
 
-# 3.
-numbers[0] = 100
+# # 3.
+# numbers[0] = 100
 
-print(list1)  # [100,2,3] -> 원본에 따라서 바뀜
-print(list2)  # [1,2,3] -> 
+# print(list1)  # [100,2,3] -> 원본에 따라서 바뀜
+# print(list2)  # [1,2,3] -> 
+
+text = 'heLLo, woRld!'
+
+new_text = text.swapcase().replace('l', 'z')
+
+print(new_text) # HEzzO, WOrLD!
