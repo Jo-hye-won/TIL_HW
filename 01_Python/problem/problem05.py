@@ -16,14 +16,20 @@ def change_pwd(word, secret_code):
     #     if str(i) == secret_code['i']:
 
     #         return secret_code['i']
-    a  = str(secret_code['s'])
-    b  = str(secret_code['s'])
-    c  = str(secret_code['a'])
-    d  = str(secret_code['f'])
-    e  = str(secret_code['y'])
+    # a  = str(secret_code['s'])
+    # b  = str(secret_code['s'])
+    # c  = str(secret_code['a'])
+    # d  = str(secret_code['f'])
+    # e  = str(secret_code['y'])
 
-    words = f'{a}{b}{c}{d}{e}'
-    return words
+    # words = f'{a}{b}{c}{d}{e}'
+    # return words
+
+
+    result = ''
+    for w in word:
+        result += str(secret_code[w])
+    return result
 
 
 

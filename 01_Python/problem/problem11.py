@@ -29,4 +29,33 @@ if __name__ == '__main__':
     print(get_row_col_maxsum(example_matrix2))  # => ('col', 102)
 
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
+    def get_row_col_maxsum(matrix):
+    row_len = 0
+    col_len = 0
+    MAX = 0
+    direct = 'row'
+    for _ in matrix[0]:
+        col_len += 1
+    for _ in matrix:
+        row_len += 1
+
+    for row in matrix:
+        total = 0
+        for col_val in row:
+            total += col_val
+        
+        if MAX < total:
+            MAX = total
     
+    # 세로 합 구하기
+    for c_idx in range(col_len):
+        total = 0
+        for r_idx in range(row_len):
+            total += matrix[r_idx][c_idx]
+        
+        # 큰 값인지 확인
+        if MAX < total:
+            MAX = total
+            direct = 'col'
+
+    return direct, MAX

@@ -14,4 +14,15 @@ if __name__ == '__main__':
     print(caesar('ssafy', 1))   # => ttbgz
     print(caesar('Python', 10)) # => Zidryx
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
+    def caesar(word, num):
     
+    result = ''
+    for w in word:
+        if w.isupper():
+            #대문자다
+            w = chr(65 + (ord(w) - 65 + num) % 26)
+        elif w.islower():
+            w = chr(97 + (ord(w) - 97 + num) % 26)
+            #소문자다
+        result += w
+    return result

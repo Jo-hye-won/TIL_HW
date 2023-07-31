@@ -24,4 +24,11 @@ if __name__ == '__main__':
     # 예시 코드는 수정하지 마세요.
     print(sum_digits(123))  # => 6
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
+    def sum_digits(number):
+    if number < 10:
+        return number
+    else:
+        cur = number % 10
+        next = number // 10
+        return cur + sum_digits(next)
     

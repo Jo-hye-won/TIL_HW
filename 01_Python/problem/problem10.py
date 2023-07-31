@@ -19,4 +19,17 @@ if __name__ == '__main__':
     ]
     print(find_one(sample_matrix))  # => (1, 1)
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
+    def find_one(matrix):
+    row_len = 0
+    col_len = 0
+
+    for row in matrix:
+        row_len += 1
+        for _ in row:
+            col_len += 1
+            break
     
+    for row in range(row_len):
+        for col in range(col_len):
+            if matrix[row][col] == 1:
+                return row, col

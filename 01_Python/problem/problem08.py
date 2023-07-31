@@ -26,4 +26,9 @@ if __name__ == '__main__':
     # 예시 코드는 수정하지 마세요.
     print(calculate_sum_number('ab123cd45ef6')) # => 21
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
-    
+    def calculate_sum_number(word):
+    total = 0
+    for w in word:
+        if w.isdigit():
+            total += int(w)
+    return total

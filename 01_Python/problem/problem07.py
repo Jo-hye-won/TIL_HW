@@ -28,4 +28,24 @@ if __name__ == '__main__':
     print(sum_primes(22)) # => 60
     print(sum_primes(33)) # => 143
     # 여기부터 아래에 추가 테스트를 위한 코드 작성 가능합니다.
-    
+    def sum_primes(number):
+    result = 0
+    for num in range(2, number):
+        # is ~~
+        # falg 변수
+        is_prime = True
+
+        #가지치기, 방어코드
+        if num == 17:
+            continue
+
+        for i in range(2, num):
+            if num % i == 0:
+                is_prime = False
+                break
+
+        if is_prime:
+            result += num
+
+
+    return result
