@@ -20,7 +20,7 @@ def sum_primes(number):
         #         sums = sums + n
         #     return sums
 
-
+## 오늘 시험 : 10 -> 11-> 7 순으로 중요함!!
 
 # 아래 코드는 실행 확인을 위한 코드입니다.
 if __name__ == '__main__':
