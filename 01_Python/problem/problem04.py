@@ -4,24 +4,25 @@
 def make_answer(security_str, security_code):
     
     # 여기에 코드를 작성하여 함수를 완성합니다.
-    # for i in security_code:
-    # a = security_str[security_code[0]]
-    # b = security_str[security_code[1]]
-    # c = security_str[security_code[2]]
-    # d = security_str[security_code[3]]
-    # e = security_str[security_code[4]]
+    for i in security_code:
+        return i
+    # # a = security_str[security_code[0]]
+    # # b = security_str[security_code[1]]
+    # # c = security_str[security_code[2]]
+    # # d = security_str[security_code[3]]
+    # # e = security_str[security_code[4]]
 
-    # answer = a+b+c+d+e
+    # # answer = a+b+c+d+e
     
-    # return answer
+    # # return answer
     
 
-    def make_answer(security_str, security_code):
-    result = ''
-    for code in security_code:
-        result += security_str[code]
-    # 여기에 코드를 작성하여 함수를 완성합니다.
-    return result
+    # def make_answer(security_str, security_code):
+    # result = ''
+    # for code in security_code:
+    #     result += security_str[code]
+    # # 여기에 코드를 작성하여 함수를 완성합니다.
+    # return result
 
 # 아래 코드는 실행 확인을 위한 코드입니다.
 if __name__ == '__main__':
