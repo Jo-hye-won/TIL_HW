@@ -18,8 +18,8 @@ for tc in range(1, T+1):       # 테스트 케이스 10번 돌면서
         for j in range(N):
             plus = arr[i][j]   # i가 0일때 j 0-100 돌고 / i가 1일때 j 0-100돌고 쭉쭉쭉 i= 100,  j=100까지
             hang_sum += plus    # hang_sum에 누적해서 더해주기
-            if hang_sum > max_idx:      # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
-                max_idx = hang_sum
+        if hang_sum > max_idx:      # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
+            max_idx = hang_sum
         # print(hang_sum)
 
     # yul_sum = 0
@@ -28,8 +28,8 @@ for tc in range(1, T+1):       # 테스트 케이스 10번 돌면서
         for j in range(N):
             plus = arr[j][i]
             yul_sum += plus
-            if yul_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
-                max_idx = yul_sum
+        if yul_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
+            max_idx = yul_sum
         # print(yul_sum)
 
     # degak_sum = 0
@@ -38,8 +38,8 @@ for tc in range(1, T+1):       # 테스트 케이스 10번 돌면서
         # for j in range(N):    # j를 돌려버리면 arr[i][i]값이 100번 누적되버림 이상한값 나오게됨
         plus = arr[i][i]        # 대각선은 행,열값 같아야 하니까 i만 돌리면서
         degak_sum += plus
-        if degak_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
-            max_idx = degak_sum
+    if degak_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
+        max_idx = degak_sum
         # print(degak_sum)
 
     # degak2_sum = 0
@@ -48,8 +48,8 @@ for tc in range(1, T+1):       # 테스트 케이스 10번 돌면서
         # for j in range(N):
         plus = arr[i][100-1-i]     # 100-1-i은 len(arr) -1 -j이다. 대각선을 거꾸로 해야해서!
         degak2_sum += plus
-        if degak2_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
-            max_idx = degak2_sum
+    if degak2_sum > max_idx:   # 최종가장 큰값이랑 비교해서 큰 값을 max_idx에 저장
+        max_idx = degak2_sum
         # print(degak2_sum)
 
 
