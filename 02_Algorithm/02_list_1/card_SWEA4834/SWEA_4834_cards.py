@@ -6,57 +6,77 @@ sys.stdin = open('card.txt')
 
 T = int(input())       # 테스트 케이스 개수
 
-for tc in range(1, T+1):
+for tc in range(1, T+1):# 나중에 출력할 때, 1부터 나오게 할거니까
   N = int(input())       # 카드 장수
-  # card = list(map(int, list(str(input())))) # 카드들 한장씩빼서 리스트로
-  # print(card)
-  # card = list(map(int, input()))
-  card = input()
+#                           # card = list(map(int, list(str(input())))) # 카드들 한장씩빼서 리스트로
+#                           # print(card)
+#                           # card = list(map(int, input()))
+  ai = list(map(int, input()))  # 공백없어서 split 안 쓴다.
+#                                 # map뒤에 올수있는거는  함수, 이터러블(리스트가아니라)
+#   # print(ai)
+  counting_arr = [0]*10
+#   print(counting_arr)
 
-tmp = [0] * 10 # 카드의 개수만큼 0을 채운 리스트 생성
+for num in ai:
+        counting_arr[num] += 1
+    # print(counting_arr)
 
-for i in range(N):
-  i = int(i)
-  tmp[i] += 1
-
-count = 0
-for b in range(len(card)):
-  if count <= card[b]:
-    count = card[b]
-    tmp = b
-
-
-T = int(input())
-
-for tc in range(1, T+1):
-    N = int(input())
-    num = input()
-    # 0 ~ 9 까지 리스트 할당
-    li = [0] * 10
-    # input 값으로 num(문자로 받아온값)을 정수형으로 변환
-    # 변환 후 num값에 포함된 값들에 +1 해주기
-    for i in num:
-        i = int(i)
-        li[i] += 1
-    # 최대값, 인덱스값 만들기
-    max1 = 0
-    idx = 0
-    # 리스트의 길이만큼 순환
-    for j in range(len(li)):
-        # max1 값이 li[j]보다 작으면
-        # 값 변경 후 인덱스 값 추가
-        if max1 <= li[j]:
-            max1 = li[j]
-            idx = j
-
-    print(f'#{tc} {idx} {max1}')
+result = 0
+num = 0
+for index in range(len(counting_arr)):
+        if counting_arr[index] >= result:    # 여기 조건을 초과로 하면 뒤에 더 큰게 있는거 안나온다.
+                                        # 카드장수가 같을 때 적힌 숫자가 큰 것을 출력하기 위해서 이상으로 함.
+            result = counting_arr[index]
+            num = index
+print(f'#{tc} {num} {result}')
 
 
 
 
-# #
-print(f'#{T+1} {tmp} {count}')
+# tmp = [0] * 10 # 카드의 개수만큼 0을 채운 리스트 생성
 #
+# for i in range(N):
+#   i = int(i)
+#   tmp[i] += 1
+#
+# count = 0
+# for b in range(len(card)):
+#   if count <= card[b]:
+#     count = card[b]
+#     tmp = b
+#
+#
+# T = int(input())
+#
+# for tc in range(1, T+1):
+#     N = int(input())
+#     num = input()
+#     # 0 ~ 9 까지 리스트 할당
+#     li = [0] * 10
+#     # input 값으로 num(문자로 받아온값)을 정수형으로 변환
+#     # 변환 후 num값에 포함된 값들에 +1 해주기
+#     for i in num:
+#         i = int(i)
+#         li[i] += 1
+#     # 최대값, 인덱스값 만들기
+#     max1 = 0
+#     idx = 0
+#     # 리스트의 길이만큼 순환
+#     for j in range(len(li)):
+#         # max1 값이 li[j]보다 작으면
+#         # 값 변경 후 인덱스 값 추가
+#         if max1 <= li[j]:
+#             max1 = li[j]
+#             idx = j
+#
+#     print(f'#{tc} {idx} {max1}')
+#
+#
+#
+#
+# # #
+# print(f'#{T+1} {tmp} {count}')
+# #
 # # input 텍스트를 불러오기 위한 코드.
 # import sys
 #

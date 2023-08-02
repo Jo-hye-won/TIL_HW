@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01_list_1/bubble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_list_1/sumo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/Max_min.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/SWEA_4834_cards.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/SWEA_9386.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/baby_gin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/card.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/counting_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_Python/problem/problem04.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01_Python/problem/problem04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_list_1/01_Array.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/01_Array.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_list_1/1206_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/1206_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_list_1/4835_sumofintervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/4835_sumofintervals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample/sol.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/Electric_bus/electric_bus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/Electric_bus/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/Electric_bus/sol3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/coloring/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/coloring/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/delta/delta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/delta/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/delta/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/live.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/subset/subset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/sum/HW_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/sum/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/sum_of_subset/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/sum_of_subset/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_list_1/01_Array.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_list_1/card_SWEA4834/SWEA_4834_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/card_SWEA4834/SWEA_4834_cards.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2TJsn1nt6Bdkxq9XKKMQeBNJWPJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,10 +55,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/02_list_1/Electric_bus" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager" selected="Python.4835_sumofintervals">
-    <configuration name="1206_view" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\02_list_1\Electric_bus" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\subset" />
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2" />
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\delta\sum" />
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\delta" />
+      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\02_list_1\Electric_bus" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.HW_sum">
+    <configuration name="HW_sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +79,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_list_2/sum" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_list_1/1206_view.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_list_2/sum/HW_sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4835_sumofintervals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="delta (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +100,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_list_2/delta" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_list_1/4835_sumofintervals.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_list_2/delta/delta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="baby_gin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,11 +121,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_list_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/baby_gin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_list_2/live.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bubble" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_list_2/coloring" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_list_1/bubble.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_list_2/coloring/sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="counting_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -145,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_list_2/delta" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/counting_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_list_2/delta/sol2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.4835_sumofintervals" />
-        <item itemvalue="Python.baby_gin" />
-        <item itemvalue="Python.counting_sort" />
-        <item itemvalue="Python.bubble" />
-        <item itemvalue="Python.1206_view" />
+        <item itemvalue="Python.HW_sum" />
+        <item itemvalue="Python.sol" />
+        <item itemvalue="Python.sol2" />
+        <item itemvalue="Python.delta (1)" />
+        <item itemvalue="Python.live" />
       </list>
     </recent_temporary>
   </component>
