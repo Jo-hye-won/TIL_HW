@@ -3,7 +3,6 @@ sys.stdin = open('input.txt')
 
 T = int(input())
 
-
 for tc in range(1, T+1):
     N, M = map(int, input().split())  # N = 배열 / M = 파리채크기
     arr = [list(map(int, input().split())) for _ in range(N)]
@@ -20,14 +19,4 @@ for tc in range(1, T+1):
 
             arr_2.append(paris)
 
-    print(max(arr_2))
-
-
-
-
-
-
-
-
-
-# print(f'# {tc} {}')
+    print(f'#{tc} {max(arr_2)}')
