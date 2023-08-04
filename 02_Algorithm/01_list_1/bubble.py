@@ -1,5 +1,5 @@
 def bubble_sort(numbers):
-    # n-1 번째까지 조사를 해나갈 것 ?????
+    # n-1 번째까지 조사를 해나갈 것
     # range(start, end, step)
     # -> 작성된 정수부터 시작
     # -> end : 작성된 정수 - step까지
@@ -18,8 +18,8 @@ def bubble_sort(numbers):
 numbers= [58, 7, 78, 12, 42]
 
 print(bubble_sort(numbers))
-
-# 내림차순 해보기!!
-def bubble_sort(numbers):
-    for i in range(len(numbers)-1, 0, -1):
-        for j
+print(numbers)
+# # 내림차순 해보기!!
+# def bubble_sort(numbers):
+#     for i in range(len(numbers)-1, 0, -1):
+#         for j

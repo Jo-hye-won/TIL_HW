@@ -19,6 +19,6 @@ for tc in range(1, T+1):
                 aj = j + dj[k]
                 if 0 <= ai < N and 0 <= aj < M:
                     s += arr[ai][aj]
-            if max_ < s:
-                max_ = s
-    print(f'#{tc} {max_}')
+            if max_ < s:  # i,j 인접 풍선까지 더하고 나면
+                max_ = s  # max_를 구하자
+    print(f'#{tc} {max_}') # 모든 위치에서 확인이 끝나면
