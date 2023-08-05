@@ -23,4 +23,4 @@ for tc in range(1, T+1):
     print('정렬결과', box_arr)
     # cnt_arr[i] == box_arr에서 i가 시작되는 index 값
 
-    max_box, min_box =
+    # max_box, min_box =
