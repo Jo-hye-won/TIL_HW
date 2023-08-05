@@ -5,13 +5,15 @@
 def count_over_speed(speed_list):
     # 여기에 코드를 작성하여 함수를 완성합니다.
     counter = 0
+    # for speed in speed_list:
+    #     if int(speed) > 100:
+    #         counter += 1
+    #     else:
+    #         continue
+    # return counter
     for speed in speed_list:
-        if int(speed) > 100:
-            counter += 1
-        else:
-            continue
+        counter += 1
     return counter
-
 
 # 아래 코드는 실행 확인을 위한 코드입니다.
 if __name__ == '__main__':

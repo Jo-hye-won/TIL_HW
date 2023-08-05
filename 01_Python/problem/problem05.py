@@ -3,7 +3,10 @@
 # 내장 함수 sum 함수를 사용하지 않습니다.
 # 사용시 감점처리 되니 반드시 확인 바랍니다.
 def change_pwd(word, secret_code):
-    
+    result = ''
+    for i in word:
+        result += str(secret_code[i])
+    return result
     # 여기에 코드를 작성하여 함수를 완성합니다.
     # ssafy 문자열의 각 자리의 문자가 secret_code의 key값과 같은 값을 반환시켜야 함
     # ls = list(word)
@@ -24,12 +27,12 @@ def change_pwd(word, secret_code):
 
     # words = f'{a}{b}{c}{d}{e}'
     # return words
-
-
-    result = ''
-    for w in word:
-        result += str(secret_code[w])
-    return result
+    #
+    #
+    # result = ''
+    # for w in word:
+    #     result += str(secret_code[w])
+    # return result
 
 
 

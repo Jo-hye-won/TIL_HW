@@ -11,23 +11,23 @@ def calc_item_price(item_list):
 
     return total
 
-
-        one_price = item_list[0]['price']
-        one_count = item_list[0]['count']
-        price_1 = one_price * one_count
-
-        two_price = item_list[1]['price']
-        two_count = item_list[1]['count']
-        price_2 = two_price * two_count
-
-        three_price = item_list[2]['price']
-        three_count = item_list[2]['count']
-        price_3 = three_price * three_count
-
-
-        prices = price_1 + price_2 + price_3
-
-        return prices
+        #
+        # one_price = item_list[0]['price']
+        # one_count = item_list[0]['count']
+        # price_1 = one_price * one_count
+        #
+        # two_price = item_list[1]['price']
+        # two_count = item_list[1]['count']
+        # price_2 = two_price * two_count
+        #
+        # three_price = item_list[2]['price']
+        # three_count = item_list[2]['count']
+        # price_3 = three_price * three_count
+        #
+        #
+        # prices = price_1 + price_2 + price_3
+        #
+        # return prices
 
 
 # 아래 코드는 실행 확인을 위한 코드입니다.
