@@ -23,7 +23,7 @@ for tc in range(1, T+1):
             for di, dj in [[0, 1], [1, 0], [0, -1], [-1, 0]]:
                 ni, nj = i + di, j + dj  # 상하좌우
                 if 0 <= ni < N and 0 <= nj < N:  # 이웃한 요소 없는거 주의
-                    sums += abs(s - arr[ni][nj])    # 차의 절대값 초기화
+                    sums += abs(s - arr[ni][nj])    # 차의 절대값 초기값에 더해주기
     print(f'#{tc} {sums}')
 
 

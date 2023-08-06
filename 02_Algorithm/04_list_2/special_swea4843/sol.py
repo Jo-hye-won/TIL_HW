@@ -4,7 +4,7 @@ sys.stdin = open('input.txt')
 # 특별한 정렬
 
 T = int(input())
-max_min = []
+# max_min = []
 
 def bubble_sort():
     for i in range(len(numbers)-1, 0, -1):

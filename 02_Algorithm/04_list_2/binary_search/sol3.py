@@ -1,3 +1,5 @@
+import sys
+sys.stdin = open('input.txt')
 def binarySearch(N, key):
     s = 1
     cnt = 0

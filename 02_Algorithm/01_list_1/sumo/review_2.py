@@ -6,10 +6,10 @@ T = int(input())
 for tc in range(1, T+1):
     N,M = map(int, input().split())
     numbers = list(input().split())
-    # print(numbers)
+    # print(type(numbers[0])) => str
 
     sums_ls =[]
-    for i in range(N-M+1):   # i위치에서 M개의 원소를 더해서 비교해야하기 때문에 범위 -M 해주기
+    for i in range(N-M+1):   # i 위치에서 M개의 원소를 더해서 비교해야하기 때문에 범위 -M 해주기
         sums = 0
         for j in range(M):   # 구간합 구하기위한 범위
             sums += int(numbers[i+j])  # i에서 시작하는 구간의 각 원소 sums에 더해서 구간 합 구하기

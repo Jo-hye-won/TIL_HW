@@ -12,7 +12,7 @@ for tc in range(1, T+1):
 
     tmp = [[0] * 10 for _ in range(10)]  # 색칠할 범위 카운트해서 입력해 둘 배열 만들기
     # print(tmp)
-
+    print(arr)
     for i in arr:  # 배열에서 리스트 하나씩 꺼내와진다.
         for j in range(i[0], i[2] + 1):
             for k in range(i[1], i[3] + 1):

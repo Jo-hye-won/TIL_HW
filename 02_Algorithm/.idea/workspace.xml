@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01_list_1/Gravity_problem/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_list_1/view/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_list_1/view/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/baby_gin/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/baby_gin/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/flatten/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_list_1/flatten/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_list_2/binary_search/sol3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/02_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/02_Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/Electric_bus/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/SWEA_9386/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_list_1/SWEA_9386/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/balloon_pang/review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/delta/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_list_2/delta/review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_list_1/baby_gin.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/baby_gin/baby_gin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_list_1/flatten/fla.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/flatten/fla.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_list_1/flatten/flatten.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/flatten/flatten.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_selfstudy/Sorting_정렬/삽입정렬.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_selfstudy/Sorting_정렬/삽입정렬.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_list_1/SWEA_1966.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/bubble_sort/SWEA_1966.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_list_1/bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/bubble_sort/bubble.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_list_1/sumo/review_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/sumo/review_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_list_1/SWEA_9386.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/SWEA_9386/SWEA_9386.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_list_1/baby_gin/baby_gin.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/baby_gin/baby_gin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_list_1/baby_gin/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/baby_gin/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_list_1/counting_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/counting_sort/counting_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_list_2/coloring/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_list_2/coloring/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_list_2/delta/delta.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_list_2/delta/delta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_list_2/sum_of_subset/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_list_2/sum_of_subset/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_list_2/binary_search/sol2.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/binary_search/sol2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_list_2/binary_search/sol3.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/binary_search/sol3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_list_2/special_swea4843/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/special_swea4843/sol.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +67,57 @@
       <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\02_list_1\Electric_bus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\02_list_1\SWEA_9386" />
+      <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\02_list_1\counting_sort" />
+      <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\01_list_1\bubble_sort" />
       <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\02_list_1\baby_gin" />
       <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\subset" />
-      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2" />
-      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\delta\sum" />
-      <recent name="C:\Users\SSAFY\Desktop\TIL_HW\02_Algorithm\03_list_2\delta" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.baby_gin (1)">
-    <configuration name="baby_gin (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.sol">
+    <configuration name="SWEA_9386 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1/SWEA_9386" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/SWEA_9386/SWEA_9386.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_9386" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\02_list_1\SWEA_9386\SWEA_9386.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="baby_gin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="baby_gin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,11 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_list_2/Selection Sort" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\02_list_1\baby_gin\baby_gin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_list_2/Selection Sort/sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,28 +159,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fla" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="02_Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\mmmm\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1/flatten" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/flatten/fla.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="review (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol_bubble" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,32 +167,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1/baby_gin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_list_2/special_swea4843" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/baby_gin/review.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="review" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="02_Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1/flatten" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/flatten/review.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_list_2/special_swea4843/sol_bubble.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.baby_gin (1)" />
-        <item itemvalue="Python.review (1)" />
+        <item itemvalue="Python.sol" />
+        <item itemvalue="Python.SWEA_9386 (1)" />
+        <item itemvalue="Python.SWEA_9386" />
+        <item itemvalue="Python.sol_bubble" />
         <item itemvalue="Python.baby_gin" />
-        <item itemvalue="Python.fla" />
-        <item itemvalue="Python.review" />
       </list>
     </recent_temporary>
   </component>
@@ -207,16 +212,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/03_list_2/subset/subset.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -23,7 +23,7 @@ def binary_search(arr, P, key):
 
 
 T = int(input())    # 테스트 케이스 개수
-for i in range(1, T+1):     # 테스트 케이스 만큼 반복할거야
+for tc in range(1, T+1):     # 테스트 케이스 만큼 반복할거야
     # 전체 쪽수 = P
     # A가 찾을 쪽 번호 = pa
     # B가 찾을 쪽 번호 = pb
@@ -36,8 +36,8 @@ for i in range(1, T+1):     # 테스트 케이스 만큼 반복할거야
     PB = binary_search(numbers, P, pb)   # B의 경우 찾기 위한 함수 호출
 
     if PA > PB:         # PA의 결과로 나온 count 개수가 PB의 count 개수보다 크면 더 많은 횟수가 필요했다는 거라서
-        print(f'#{i} B')        # B가 이긴거!
+        print(f'#{tc} B')        # B가 이긴거!
     elif PA < PB:     # PA의 결과로 나온 count 개수가 PB의 count 개수보다 작으면 더 적은 횟수가 필요했다는 거라서
-        print(f'#{i} A')    # A가 이긴거!
+        print(f'#{tc} A')    # A가 이긴거!
     else:              # 비겼을 경우
-        print(f'#{i} 0')    # 0을 출력해라
+        print(f'#{tc} 0')    # 0을 출력해라
