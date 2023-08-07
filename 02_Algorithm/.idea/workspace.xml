@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/06_String/GNS/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/GNS/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_selfstudy/백준/10810_공넣기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_selfstudy/백준/문자열.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_list_2/balloon_pang/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/GNS/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06_String/4864_compare_string/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/4864_compare_string/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_String/conversion/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/conversion/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_String/백만장자프로젝트/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/백만장자프로젝트/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/algo1/Algo1_부울경_1반_조혜원.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/algo1/Algo1_부울경_1반_조혜원.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/algo2/Algo2_부울경_1반_조혜원.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/algo2/Algo2_부울경_1반_조혜원.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

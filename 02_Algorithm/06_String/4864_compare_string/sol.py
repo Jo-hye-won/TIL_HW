@@ -4,17 +4,17 @@ sys.stdin = open('input.txt.py')
 T = int(input())
 
 for tc in range(1, T+1):
-    M = input()
-    N = input()
+    M = input()     # str1
+    N = input()     # str2
     # print(M ,N)
     # cnt = 0
-
+    while 0 < len(M) and 0 < len(N):
+        if M[i]
     # if M in N:
     #     cnt += 1
     # 이거 쓰지 말고 해봐
 
-
-    print(f'#{tc} {cnt}')
+    # print(f'#{tc} {cnt}')
 
 def func(P, T):
     p, t = len(P), len(T)
