@@ -59,7 +59,7 @@ for tc in range(1, T+1):
 
 
 
-    # if arr[k][l] == H:     # 기준과 같다면
+            # if arr[k][l] == H:     # 기준과 같다면
             #     continue           # 그대로 두고 그냥 넘어가고
             # if arr[k][l] > H:    # 기준인 평균보다 값이 크면
             #     arr[k][l] -= 1     # 값을 1 빼주고

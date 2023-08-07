@@ -16,7 +16,7 @@ def itoa(a):
         a //= 10
         # 음수일 경우에는?
         if a < 0:
-            or
+            # or
     return s[::-1]
 
 for i in range(1, 7):
