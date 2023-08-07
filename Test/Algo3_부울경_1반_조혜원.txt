@@ -1,0 +1,23 @@
+
+1. 이진탐색에 대해 간단히 설명하시오.
+-  이진 탐색이란 탐색하는 경우의 수를 줄이기 위한 방법으로
+   가운데 값을 기준으로 잡고 원하는 값을 찾아나가는 탐색 기법이다.
+   정렬이 된 데이터를 가지고 탐색하며, 시작값이 끝값보다 작을동안 탐색한다.
+   가운데 값이 찾을 값보다 크면 끝값을 mid-1로 잡고 왼쪽 구간을 탐색하고
+   가운데 값이 찾을 값보다 작으면 시작값을 mid+1로 해서 오른쪽 구간을 다시 탐색한다.
+
+
+2. 함수를 완성하라.
+def binarySearch(a, N, key):
+    start = 0
+    end= N-1
+    while (  start <= end:
+        mid = (start+end) // 2
+            if a[mid] == key:
+                return True
+            if a[mid] > key:
+                end = mid - 1
+            if a[mid] < key:
+                end = mid + 1
+    )
+    return False

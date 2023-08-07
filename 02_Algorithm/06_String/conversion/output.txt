@@ -1,0 +1,6 @@
+#1 5 <class 'str'>
+#2 3 <class 'str'>
+#3 1461 <class 'str'>
+#4 4671224 <class 'str'>
+#5 85761 <class 'str'>
+#6 -1 <class 'str'>
