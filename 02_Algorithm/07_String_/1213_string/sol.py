@@ -40,8 +40,7 @@ for _ in range(10):
         t_idx += 1
 
         if p_idx == len(pattern):
+            result += 1  # 패턴 한 번 찾았어요
+            p_idx = 0  # 다음부터는 다시 0번부터 조사.
 
-
-
-
-    print(f'#{tc}')
+    print(f'#{tc} {result}')
