@@ -9,14 +9,16 @@
 
 def itoa(a):
     s = ''
+    if a <0:
+        a= -a
     while a > 0:
         ord('0') + a % 10  # 일의 자리 숫자의 ASCII 값
         s += chr(ord('0') + a % 10)  # 일의 자리 숫자의 ASCII 값을
                                      # 빈문자열에다 붙여봐
         a //= 10
         # 음수일 경우에는?
-        if a < 0:
-            # or
+        # if a < 0:
+        #     # or
     return s[::-1]
 
 for i in range(1, 7):
