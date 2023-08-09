@@ -19,7 +19,7 @@ for tc in range(1, T+1):
             for p in range(K // 2):
                 if arr[j + p][i] != arr[j + K - 1 - p][i]:
                     break  # for p, j부터 시작하는 구간은 회문이 아님
-            else:  # for K//2번 반복..
+            else:
                 cnt += 1
     print(f'#{tc} {cnt}')
 

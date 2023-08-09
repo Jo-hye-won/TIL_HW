@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/06_String/4861_swea/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/4861_swea/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/4861_swea/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/4861_swea/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/GNS/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_String/GNS/sol3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/live.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_String/GNS/sol3.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/GNS/sol3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" beforeDir="false" afterPath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,28 @@
       <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\01_list_1\bubble_sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sol2">
+  <component name="RunManager" selected="Python.live">
+    <configuration name="live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/live_lecture" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/live_lecture/live.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sol2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,34 +166,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="02_Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07_String_/1215_palindrome1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sol2" />
+        <item itemvalue="Python.live" />
         <item itemvalue="Python.sol3 (1)" />
+        <item itemvalue="Python.sol2" />
         <item itemvalue="Python.sol2 (2)" />
         <item itemvalue="Python.sol2 (1)" />
-        <item itemvalue="Python.sol3" />
       </list>
     </recent_temporary>
   </component>
