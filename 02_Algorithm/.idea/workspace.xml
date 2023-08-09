@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/live.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4866/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4866/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4866/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4873/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4873/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/4873/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/bracket/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/bracket/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/bracket/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/stack2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_String/GNS/sol3.py" beforeDir="false" afterPath="$PROJECT_DIR$/06_String/GNS/sol3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" beforeDir="false" afterPath="$PROJECT_DIR$/07_String_/1215_palindrome1/sol3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/live_lecture/live.md" beforeDir="false" afterPath="$PROJECT_DIR$/08_Stack1/live_lecture/live.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +68,8 @@
       <recent name="C:\Users\mmmm\Desktop\HW_TIL\02_Algorithm\01_list_1\bubble_sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.live">
-    <configuration name="live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.sol (2)">
+    <configuration name="sol (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,11 +77,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/live_lecture" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/4873" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/live_lecture/live.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/4873/sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +98,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_list_1/Electric_bus" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/4866" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_list_1/Electric_bus/sol2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/4866/sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol2 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,11 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_String/GNS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/bracket" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_String/GNS/sol2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/bracket/sol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,11 +140,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_String/4861_swea" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/bracket" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_String/4861_swea/sol2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="stack2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,11 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06_String/GNS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/live_lecture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_String/GNS/sol3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/live_lecture/stack2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.live" />
-        <item itemvalue="Python.sol3 (1)" />
+        <item itemvalue="Python.sol (2)" />
+        <item itemvalue="Python.sol (1)" />
         <item itemvalue="Python.sol2" />
-        <item itemvalue="Python.sol2 (2)" />
-        <item itemvalue="Python.sol2 (1)" />
+        <item itemvalue="Python.sol" />
+        <item itemvalue="Python.stack2" />
       </list>
     </recent_temporary>
   </component>
