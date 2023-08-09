@@ -385,7 +385,7 @@ print(list(result)) # ['1','2','3']
 
 # 참고
 import sys
-sys.stdin = open('input.txt')
+sys.stdin = open('input.in')
 
 [참고](https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline#-input%EB%8C%80%EC%8B%A0-sysstdinreadline%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
 
