@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6757349-02a7-4bd0-b2ec-9f37dab6e4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/08_Stack1/4866/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/4866/sol3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/password/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/password/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/password/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_Python/03_함수와 제어문1/Live.md" beforeDir="false" afterPath="$PROJECT_DIR$/../01_Python/03_함수와 제어문1/Live.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_Python/03_함수와 제어문1/live.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01_Python/03_함수와 제어문1/live.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/4871_graph/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/4871_graph/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/4871_graph/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/DFS/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/DFS/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/DFS/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/lecture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/live.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/live.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/live2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/live3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_Algorithm/09_Stack2/live/practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Algorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Algorithm/input.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Algorithm/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Algorithm/output.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/08_Stack1/4866/sol.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
