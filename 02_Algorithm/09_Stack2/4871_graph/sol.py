@@ -12,10 +12,10 @@ def DFS(node):
             return 1
         if visited[start] == 0:
             visited[start] = True
-        for next in range(0, V+1):
-            if not visited[next] and matrix[start][next] == 1:
-                stack.append(next)
-                # print(stack)
+            for next in range(0, V+1):
+                if not visited[next] and matrix[start][next] == 1:
+                    stack.append(next)
+                    # print(stack)
 
     else:
         return 0
