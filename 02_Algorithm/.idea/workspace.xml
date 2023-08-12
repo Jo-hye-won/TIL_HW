@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0dad9-dfe8-47f6-b17f-d072d19e41ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/03_list_2/balloon_pang/review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_list_2/balloon/review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Stack1/password/sol3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/ballooon_pang/review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sososol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/snail/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/snail/sol2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_list_1/bubble_sort/bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_list_1/bubble_sort/bubble.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_list_1/card_SWEA4834/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/card_SWEA4834/review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_list_1/counting_sort/counting_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_list_1/counting_sort/counting_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_list_2/Selection Sort/self_study.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/Selection Sort/self_study.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_String_/1213_string/boyer.py" beforeDir="false" afterPath="$PROJECT_DIR$/07_String_/1213_string/boyer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" beforeDir="false" afterPath="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_list_2/Snail/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/Snail/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/input.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/output.out" afterDir="false" />
     </list>
@@ -47,10 +52,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/input.in" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test_provide" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.sol (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <output_file path="$PROJECT_DIR$/output.out" is_save="true" />
       <module name="pythonProject1" />
@@ -136,27 +141,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack1/bracket" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="sol2 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,21 +162,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sol3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_provide/pipe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_provide/pipe/sol3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.sol2 (1)" />
-      <item itemvalue="Python.sol2 (2)" />
-      <item itemvalue="Python.sol" />
       <item itemvalue="Python.self_study" />
       <item itemvalue="Python.sol (1)" />
+      <item itemvalue="Python.sol2 (2)" />
+      <item itemvalue="Python.sol" />
+      <item itemvalue="Python.sol3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sol3" />
         <item itemvalue="Python.sol (1)" />
         <item itemvalue="Python.self_study" />
         <item itemvalue="Python.sol" />
         <item itemvalue="Python.sol2 (2)" />
-        <item itemvalue="Python.sol2 (1)" />
       </list>
     </recent_temporary>
   </component>
