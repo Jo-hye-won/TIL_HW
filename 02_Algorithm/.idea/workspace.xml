@@ -2,21 +2,238 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0dad9-dfe8-47f6-b17f-d072d19e41ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03_list_2/balloon_pang/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_list_2/balloon/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08_Stack1/password/sol3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/ballooon_pang/review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sol3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/pipe/sososol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/snail/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_provide/snail/sol2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_list_2/Snail/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/04_list_2/Snail/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/input.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/output.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4866/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4873/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4873/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/4873/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/bracket/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/bracket/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/bracket/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/bracket/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/live_lecture/live.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/live_lecture/live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/live_lecture/stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/live_lecture/stack2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/password/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/password/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/password/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/password/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/password/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_Stack1/triangle/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/etc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/t.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/4871_graph/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/4871_graph/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/4871_graph/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/4871_graph/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/DFS/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/DFS/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/DFS/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/lecture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/live.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/live2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/live3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/live/practice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/02_Algorithm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/00_List_I.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Array_1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Gravity_problem/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Gravity_problem/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Gravity_problem/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/List_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Sample/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/Sample/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/bubble_sort/SWEA_1966.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/bubble_sort/bubble.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/max_min/SWEA_4828.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/max_min/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/max_min/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/max_min/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/sumo/4835_sumofintervals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/sumo/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/sumo/review_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/sumo/sumo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/view/1206_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/view/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/view/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/01_list_1/view/view.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/02_list_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/01_List_I.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/Electric_bus/electric_bus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/Electric_bus/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/Electric_bus/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/Electric_bus/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/Max_min.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/SWEA_9386/SWEA_9386.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/SWEA_9386/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/SWEA_9386/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/baby_gin/baby_gin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/baby_gin/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/baby_gin/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/card_SWEA4834.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/000.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/SWEA_4834_cards.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/card.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/card_SWEA4834/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/counting_sort/counting_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/flatten/fla.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/flatten/flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/flatten/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/flatten/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/flatten/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/02_list_1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/02_List_II.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/Array_2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/balloon_pang/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/balloon_pang/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/balloon_pang/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/balloon_pang/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/coloring/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/coloring/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/coloring/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/delta/delta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/delta/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/delta/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/delta/review.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/delta/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/get_rid_of_fly/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/get_rid_of_fly/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/get_rid_of_fly/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/get_rid_of_fly/sol_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/subset.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/subset/subset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/sum/HW_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/sum/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/sum/sol_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/sum_of_subset/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/03_list_2/sum_of_subset/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/03_List_II.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/Selection Sort/self_study.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/Selection Sort/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/Snail/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/balloon/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/balloon/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/SWEA_4839.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/recur.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/binary_search/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/ladder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/live.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/special_swea4843/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/special_swea4843/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/special_swea4843/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/special_swea4843/sol_bubble.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/04_list_2/special_swea4843/sol_selection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/BUS/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/BUS/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/BUS/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/BUS/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/Ladder/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/Ladder/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/Word_where/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/Word_where/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/05_Problem_solution/Word_where/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4861_swea/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4861_swea/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4861_swea/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4861_swea/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4864_compare_string/input.txt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4864_compare_string/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/4864_compare_string/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/GNS/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/GNS/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/GNS/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/GNS/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/GNS/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/conversion/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/conversion/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/conversion/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/live_lecture/20230807.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/live_lecture/20230807_live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/reverse/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/reverse/ouput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/reverse/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/백만장자프로젝트/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/백만장자프로젝트/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/06_String/백만장자프로젝트/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1213_string/boyer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1213_string/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1213_string/sol.TMP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1213_string/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1213_string/sol_for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1215_palindrome1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1215_palindrome1/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1215_palindrome1/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1215_palindrome1/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/1215_palindrome1/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/3143_swea/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/3143_swea/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/3143_swea/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/ouput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/4865_Swea/sol_dic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/live_lecture/bruteForce.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/07_String_/live_lecture/live.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4866/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4866/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4866/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4866/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4866/sol3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4873/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4873/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/4873/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/bracket/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/bracket/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/bracket/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/bracket/sol2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/live_lecture/live.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/live_lecture/live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/live_lecture/stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/live_lecture/stack2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/password/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/password/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/08_Stack1/password/sol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/input.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Algorithm_/output.out" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +271,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test_provide" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hw\Desktop\TIL_HW\02_Algorithm\test_provide" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hw\Desktop\TIL_HW\02_Algorithm\test_provide\ballooon_pang" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -188,8 +413,8 @@
       <item itemvalue="Python.self_study" />
       <item itemvalue="Python.sol (1)" />
       <item itemvalue="Python.sol2 (2)" />
-      <item itemvalue="Python.sol" />
       <item itemvalue="Python.sol3" />
+      <item itemvalue="Python.sol" />
     </list>
     <recent_temporary>
       <list>
