@@ -26,10 +26,10 @@ for char in cal:
         elif char == ')':
             while stack and stack[-1] != '(':
                 result += stack.pop()
-            stack.pop
+            stack.pop()
 
     else:   # 정수면 result에 더해버리면 된다.
         result += char
-    while stack:
-        result += stack.pop()
-    print(result, stack)
+while stack:
+    result += stack.pop()
+print(result)

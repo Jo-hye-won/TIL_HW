@@ -17,4 +17,4 @@ for char in cal:
 # stack 에 들어있는 모든 연산자들을 result에 더해주려면
 while stack:
     result += stack.pop()
-print(result, stack)
+print(result)
