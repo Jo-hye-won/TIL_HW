@@ -17,7 +17,7 @@ for tc in range(1, T+1):
         if max_card <= tmp[index]:
             max_card = tmp[index]
             card_count = index
-    print(f'# {tc} {card_count} {max_card}')
+    print(f'#{tc} {card_count} {max_card}')
 
 
     # for i in tmp:

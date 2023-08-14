@@ -13,13 +13,20 @@ def bubble_sort(numbers):
             # numbers[j] = numbers[j+1]
             # numbers[j + 1] = tmp
                  numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
-                 print(numbers, numbers[j], numbers[j+1])
+                 # print(numbers, numbers[j], numbers[j+1])
     return numbers
 numbers= [58, 7, 78, 12, 42]
-
 print(bubble_sort(numbers))
-print(numbers)
-# # 내림차순 해보기!!
-# def bubble_sort(numbers):
-#     for i in range(len(numbers)-1, 0, -1):
-#         for j
+# print(numbers)
+
+# 내림차순 해보기!!
+numbers2= [58, 7, 78, 12, 42]
+def Bubble_sort(numbers2):
+    for i in range(len(numbers2)):
+        for j in range(len(numbers2)-1, i, -1):
+            if numbers2[j]>numbers2[j-1]:
+                numbers2[j], numbers2[j - 1] = numbers2[j-1],  numbers2[j]
+    return numbers2
+
+print(Bubble_sort(numbers2))
+# print(numbers2)

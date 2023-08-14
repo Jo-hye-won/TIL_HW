@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0dad9-dfe8-47f6-b17f-d072d19e41ad" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/t.txt" beforeDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/08_Stack_1/4866/review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/bracket/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/bracket/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_provide/bracket/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/input.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.out" beforeDir="false" afterPath="$PROJECT_DIR$/output.out" afterDir="false" />
+>>>>>>> bb731fa9fad6aa760b740c714e1eb86fd66e3f6a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +50,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/input.in" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test_provide" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.sol (2)">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hw\Desktop\TIL_HW\02_Algorithm\test_provide" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hw\Desktop\TIL_HW\02_Algorithm\test_provide\ballooon_pang" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <output_file path="$PROJECT_DIR$/output.out" is_save="true" />
       <module name="pythonProject1" />
@@ -65,7 +84,7 @@
       <option name="INPUT_FILE" value="C:\Users\hw\Desktop\TIL_HW\02_Algorithm\input.in" />
       <method v="2" />
     </configuration>
-    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="review (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09_Stack2/live" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_provide/bracket" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_Stack2/live/practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_provide/bracket/review.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="recur" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="review (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../lectures/02_algorithm/07_stack/DFS" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack_1/4866" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../lectures/02_algorithm/07_stack/DFS/recur.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack_1/4866/review.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="review" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="review (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09_Stack2/4871_graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09_Stack_1/4871_graph" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_Stack2/4871_graph/review.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_Stack_1/4871_graph/review.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sol2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,11 +155,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09_Stack2/4871_graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/08_Stack_1/4866" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_Stack2/4871_graph/sol.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/08_Stack_1/4866/sol2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sol (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sososol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,11 +176,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09_Stack2/1219_Find_path" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_provide/pipe" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_provide/pipe/sososol.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,19 +191,27 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+<<<<<<< HEAD
       <item itemvalue="Python.practice" />
       <item itemvalue="Python.recur" />
       <item itemvalue="Python.review" />
       <item itemvalue="Python.sol (1)" />
       <item itemvalue="Python.sol (2)" />
+=======
+      <item itemvalue="Python.review (1)" />
+      <item itemvalue="Python.sososol" />
+      <item itemvalue="Python.review (2)" />
+      <item itemvalue="Python.sol2 (1)" />
+      <item itemvalue="Python.review (3)" />
+>>>>>>> bb731fa9fad6aa760b740c714e1eb86fd66e3f6a
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sol (2)" />
-        <item itemvalue="Python.practice" />
-        <item itemvalue="Python.review" />
-        <item itemvalue="Python.sol (1)" />
-        <item itemvalue="Python.recur" />
+        <item itemvalue="Python.review (3)" />
+        <item itemvalue="Python.review (2)" />
+        <item itemvalue="Python.sol2 (1)" />
+        <item itemvalue="Python.sososol" />
+        <item itemvalue="Python.review (1)" />
       </list>
     </recent_temporary>
   </component>

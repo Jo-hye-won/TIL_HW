@@ -43,3 +43,4 @@ for _ in range(10):
     tc = int(input())
     pattern = input()
     target = input()
+    print(boyer_moore())

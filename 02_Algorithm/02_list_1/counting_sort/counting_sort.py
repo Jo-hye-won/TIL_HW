@@ -29,16 +29,14 @@ def counting_sort(numbers, k):
 
     for i in range(1, len(count_arr)):
     # for i in range(1, k):
-        print(count_arr[i], count_arr[-1])
+    #     print(count_arr[i], count_arr[-1])
         count_arr[i] += count_arr[i-1]
     # 원본 배열의 값들을 다시 순회하면서
     # 원본 배열의 각 값들을 정렬 된 인덱스 위치에 담아주기
-    for num in numbers:
-        count_arr[num] -= 1
+    for num in numbers:        count_arr[num] -= 1
         result[count_arr[num]] = num
-
 
     return result
 
-numbers = [0, 4, 1, 3, 1, 2, 4, 1]
-print(counting_sort(numbers))
+numbers = [0, 4, 1, 3, 1, 2, 4, 7, 3, 5, 6, 2, 8, 9, 1, 1]
+print(counting_sort(numbers,10))
