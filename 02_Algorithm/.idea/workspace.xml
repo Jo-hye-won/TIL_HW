@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59d0dad9-dfe8-47f6-b17f-d072d19e41ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/etc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/sol3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/1219_Find_path/t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_Stack2/4871_graph/review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Stack2/4871_graph/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_Stack2/4871_graph/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Stack2/live/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_Stack2/live/practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_Stack2/1219_Find_path/t.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,9 +173,9 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.practice" />
-      <item itemvalue="Python.sol (1)" />
       <item itemvalue="Python.recur" />
       <item itemvalue="Python.review" />
+      <item itemvalue="Python.sol (1)" />
       <item itemvalue="Python.sol (2)" />
     </list>
     <recent_temporary>
