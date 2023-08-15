@@ -1,4 +1,29 @@
+import sys
+sys.stdin = open('algo2_sample_in.txt')
+
 T = int(input())
+def search():
+    if char == ')':
+        tmp = 0
+        while stack:
+            val = stack.pop()
+            if val.isdigit():
+                tmp += int(val)
+            elif val == '(':
+                stack.append(str(tmp))
+                return True
+            elif val == '{':
+                print(stack, tc)
+                check = False
+                return False
+        else:
+            return False
+    elif char == '}':
+        tmp = 1
+
+
+
+
 
 for tc in range(1, T+1):
     word = input()

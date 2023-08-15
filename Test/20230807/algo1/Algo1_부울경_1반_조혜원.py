@@ -1,3 +1,5 @@
+import sys
+sys.stdin = open('algo1_sample_in.txt')
 T = int(input())  # 테스트 케이스 개수
 
 for tc in range(1, T+1):

@@ -42,9 +42,7 @@ for x in susik:
         stack[top] = int(x)
     else:
         op2 = stack[top]  # pop()
-        top -= 1
-        op1 = stack[top]  # pop()
-        top -= 1
+
         if x == '+':  # op1 + op2 (먼저 꺼낸 애가 오른쪽에)
             top += 1
             stack[top] = op1 + op2

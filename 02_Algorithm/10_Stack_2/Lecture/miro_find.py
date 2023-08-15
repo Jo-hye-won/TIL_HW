@@ -51,8 +51,6 @@ def backtracking(arr, now, end, result):
                 # now번째 요소를 안쓴 날
                 backtracking(arr, now, end, result)
 
-
-
 # 유망성(다음조사를 하는 의미가 있니 없니?)
 # 후보군 수 :우리의 후보군이란,  0과 1밖에 없다. (쓰거나 안쓰거나/ 넣거나 안넣거나)
 # MAXCANDIDATES = 12  그래서 우린 지금은 이거 안쓸거다

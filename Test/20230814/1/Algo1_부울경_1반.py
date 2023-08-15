@@ -1,4 +1,5 @@
-
+import sys
+sys.stdin = open('algo1_sample_in.txt')
 ''' NxN 배열형태의 지도 
 인접 = 상하좌우 
 지도의 가장자리는 인접한 지역이 3곳 또는 2곳일 수 있음
