@@ -33,7 +33,8 @@ def counting_sort(numbers, k):
         count_arr[i] += count_arr[i-1]
     # 원본 배열의 값들을 다시 순회하면서
     # 원본 배열의 각 값들을 정렬 된 인덱스 위치에 담아주기
-    for num in numbers:        count_arr[num] -= 1
+    for num in numbers:
+        count_arr[num] -= 1
         result[count_arr[num]] = num
 
     return result
