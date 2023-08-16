@@ -6,8 +6,8 @@
 # start : 시작지점
 # end : 끝지점
 
-def binary_search(arr, N,key, start, end):
-    if start > end: # 시작지점이 끝지점보다 커지면
+def binary_search(arr, N, key, start, end):
+    if start > end:  # 시작지점이 끝지점보다 커지면
         # 타겟 찾을 수 없음 ==> 조사 종료
         return False
     else:

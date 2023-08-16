@@ -1,4 +1,4 @@
-## Queen
+## n-Queen
 
 def check(x):
     for i in range(x):
@@ -15,7 +15,7 @@ def dfs(x):
         result += 1
         print(row)
     else:
-        for i in range(n):
+        for i in range(n):  # 퀸이 놓이면 다음 칸들은 조사할 필요가 없음
             row[x] = i
 
             if check(x):
