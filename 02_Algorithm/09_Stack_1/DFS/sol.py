@@ -26,7 +26,6 @@ def DFS(node):
                     stack.append(next)
                     # print(start, end=' ')
 
-
 # V = node의 개수
 # E = Edge 간선의 개수
 V, E = map(int, input().split())

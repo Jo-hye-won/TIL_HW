@@ -12,7 +12,7 @@ for tc in range(1, T+1):
     # numbers = list(map(int, input().split()))]
     # pizza = []
     # index = 1
-    ci =  [[inest. val] for idx, val in enumearate(list(map(int, iput())))
+    ci =  [[inest. val] for idx, val in enumerate(list(map(int, input())))
 
     while len(deque) >1:
         pizza = queue.pop(0)
