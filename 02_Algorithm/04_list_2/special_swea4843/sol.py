@@ -4,7 +4,7 @@ sys.stdin = open('input.txt')
 # 특별한 정렬
 
 T = int(input())
-# max_min = []
+# SWEA_4828_max_min = []
 
 def bubble_sort():
     for i in range(len(numbers)-1, 0, -1):
@@ -24,29 +24,29 @@ for tc in range(1, T + 1):
     # for j in range(len(numbers)//2):
         max_min.append(numbers.pop())
         max_min.append(numbers.pop(0))
-    # print(max_min)
+    # print(SWEA_4828_max_min)
 
     # join은 문자열을 받아서 하는 애라서 max_min을 문자열로 바꿔서 해야함
-    # result_str = " ".join(map(str, max_min))
+    # result_str = " ".join(map(str, SWEA_4828_max_min))
     # print(result_str)
 
     print(f'#{tc}',*max_min)
     # result = numbers[:10]
     # print(result)
     #
-    # max_min = []
+    # SWEA_4828_max_min = []
     # while len(result) != 0:   # 종료조건을 잘 생각하자..... == 이 아니라 != 해야한다.
     # # for j in range(10):
     #     max_result = result.pop(-1)
-    #     # max_min.append((result.pop()))
+    #     # SWEA_4828_max_min.append((result.pop()))
     #     min_result = result.pop(0)
-    #     # max_min.append((result.pop(0)))
+    #     # SWEA_4828_max_min.append((result.pop(0)))
     #     # print(max_result, min_result)
-    #     max_min.append(max_result)
-    #     max_min.append(min_result)
-    # # print(max_min)
+    #     SWEA_4828_max_min.append(max_result)
+    #     SWEA_4828_max_min.append(min_result)
+    # # print(SWEA_4828_max_min)
     #
-    # print(f'#{tc}',*max_min)
+    # print(f'#{tc}',*SWEA_4828_max_min)
 
     # print(f'{tc} {numbers}')
 '''

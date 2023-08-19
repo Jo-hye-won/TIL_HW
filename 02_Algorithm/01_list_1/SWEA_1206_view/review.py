@@ -8,7 +8,7 @@ for tc in range(1, T+1):
     building = list(map(int, input().split()))
     view = 0
     for i in range(2, H-2):
-        max_view = building[i-2]
+        max_view = building[i-2]  # 가장 높은 건물높이 초기화
         if max_view < building[i - 1]:
             max_view = building[i - 1]
         if max_view < building[i + 1]:

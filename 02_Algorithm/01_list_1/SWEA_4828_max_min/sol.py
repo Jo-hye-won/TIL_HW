@@ -21,7 +21,7 @@ for tc in range(1, T+1):
     # print(arr)
 
     # 방법2
-    # result = max_min(arr)
+    # result = SWEA_4828_max_min(arr)
     # print(f'#{tc} {result}')
 
     # 방법3
