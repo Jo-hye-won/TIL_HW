@@ -12,9 +12,9 @@ def bfs(s, V): # 시작정점 s, 마지막 정점 V
     visited[s] = 1                                       # 시작점 방문표시
     while que:  # 큐에 정점이 남아있으면 front != rear
         t = que.pop(0)   # 디큐
-        print(t)        # 방문한 정점에서 할 일
+        # print(t)        # 방문한 정점에서 할 일
         for w in adj_l[t]:  # 인접한 정점 중 인큐되지 않은 정점 w가 있으면
-            print(w,'w')
+            # print(w,'w')
             if visited[w] == 0:     # w인큐, 인큐되었음을 표시
                 que.append(w)
                 visited[w] = visited[t] + 1
@@ -29,7 +29,7 @@ for i in range(E):
     adj_l[v1].append(v2)
     adj_l[v2].append(v1)    # 방향이 없는 경우
 # 여기까지 인접리스트 ---------------------------
-bfs(1, 7)
+print(bfs(1, 7))
 
 
 

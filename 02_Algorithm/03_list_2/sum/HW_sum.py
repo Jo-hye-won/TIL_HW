@@ -4,7 +4,6 @@ sys.stdin = open('input.txt')
 T = 10  # 테스트 케이스 10개
 N = 100     # 행,열 100 X 100
 
-
 for tc in range(1, T+1):       # 테스트 케이스 10번 돌면서
     a = int(input())    # 젤위에 있는거 하나 이상한 입력 없애주고
     arr = [list(map(int, input().split())) for _ in range(N)] # 배열만들어주기
