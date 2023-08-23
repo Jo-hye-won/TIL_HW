@@ -8,6 +8,7 @@ T = int(input())
 for tc in range(1, T+1):
     N = int(input())
     cards = map(int, input())
+    # print(cards)
     tmp = [0] * 10
     for card in cards:
         tmp[card] += 1
