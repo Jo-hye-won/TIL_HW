@@ -17,7 +17,7 @@ def search(x,y):
             nj = y + dy[k]
             # ni,nj가 범위 안에 있고 갈 수 있는 길이며, 들린적이 없으면 가야지
             if 0 <= ni < N and 0 <= nj < N and ladder[ni][nj] and visited[ni][nj] == 0:
-                x, y = ni, nj  # 그리고 거기를 기점으로 또 serch 해야함
+                x, y = ni, nj  # 그리고 거기를 기점으로 또 search 해야함
                 visited[ni][nj] = 1   # 들렀음을 표시해주자
 
     if ladder[x][y] == 2: # 2가 적혀있는 도착점에 다다르면
