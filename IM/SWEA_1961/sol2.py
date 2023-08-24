@@ -14,5 +14,5 @@ for tc in range(1, T+1):
             print(arr[N-1-i][N-1-j], end='')
         print(end=' ')
         for j in range(N):
-            print(arr[i][N-j-1], end='')
+            print(arr[j][N-1-i], end='')
         print()
