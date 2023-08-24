@@ -1,3 +1,7 @@
+import sys
+sys.stdin = open('input.txt')
+
+# 10개의 타겟
 target = ["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
 
 for _ in range(int(input())):
