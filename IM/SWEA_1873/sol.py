@@ -48,6 +48,6 @@ for tc in range(1, T+1):
     # 문자 동작을 하나씩 코드로 옮겨보자
     for word in words:
         print(word)
-        if word == 'U':
+        # if word == 'U':
 
 
