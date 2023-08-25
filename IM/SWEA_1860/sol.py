@@ -16,6 +16,11 @@ for tc in range(1, T+1):
     visited_time.sort()  # 도착시간 순으로 정렬
     result = 'Possible'
     for i in range(N):
+        # 1초에 K//M씩 생산하니까
+        # i+1 번째 손님이 방문한 시간이
+        # i 번째 손님이 방문한 시간까지의 붕어빵 생산량보다 커버리면
+        # 붕어빵이 없어서 제공할 수가 없으니까
+        # 아래와 같이 조건문을 달아준다.
         if i+1 > visited_time[i]//M*K:
             result = 'Impossible'
             break
