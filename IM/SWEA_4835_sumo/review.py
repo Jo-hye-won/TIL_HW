@@ -40,3 +40,18 @@ for tc in range(1, T+1):
 #         if min_sums > sum_M[k]:
 #             min_sums = sum_M[k]
 #     print(sum_M)
+
+money = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
+money_cnt = [0] * 8
+
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    for i in range(8):
+        # money의 각 금액으로 나눈 몫이
+        # 그 돈을 사용할 개수가 되고
+        # 나머지로 다시 또 다른 금액이 몇개 필요한지 반복해야한다
+        money_cnt[i] = N // money[i]
+        N %= money[i]
+    print(f'#{tc}')
+    print(*money_cnt)

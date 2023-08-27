@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('input.txt')
+
 for tc in range(1, 11):
     _ = int(input())
     ladders = [list(map(int, input().split())) for _ in range(100)]

@@ -1,12 +1,11 @@
 import sys
 sys.stdin = open('input.txt')
 
-
 def rotation_90(arr):
     matrix = [[0]*N for _ in range(N)]
     for i in range(N):
         for j in range(N):
-            matrix[i][j] = arr[N - 1 - j][i]
+            matrix[i][j] = arr[N-1-j][i]
     return matrix
 
 
@@ -18,6 +17,7 @@ for tc in range(1, T+1):
     result2 = rotation_90(result)
     result3 = rotation_90(result2)
     # print(result)
+
     print(f'#{tc}')
     for k in range(N):
         a = map(str, result[k])

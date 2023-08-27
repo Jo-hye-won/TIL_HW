@@ -35,7 +35,7 @@ for _ in range(1, T+1):
     for i in range(N):
         if ladder[0][i] == 1:
             result = search(0, i)
-        if result != "실패":
-            break
+        if result != "실패": # 조사를 한번 끝냈는데 result에 실패말고 다른 값이 있다?
+            break   # 그럼 값 찾았으니까 종료
 
     print(f'#{tc} {result}')

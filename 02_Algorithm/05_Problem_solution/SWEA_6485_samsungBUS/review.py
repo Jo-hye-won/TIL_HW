@@ -19,7 +19,7 @@ for tc in range(1, T+1):
             bus_cnt[i] += 1  # 버스 노선 A-B까지가니까 들리는거 표시해주기
     # print(bus_cnt) # [0, 1, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0....
     P = int(input())
-    bus_station = [int(input()) for _ in range(P)]  #[1, 2, 3, 4, 5]
+    bus_station = [int(input()) for _ in range(P)]  # [1, 2, 3, 4, 5]
     result = []
     for k in bus_station:
         ap = bus_cnt[k]

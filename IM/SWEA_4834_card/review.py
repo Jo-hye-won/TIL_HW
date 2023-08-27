@@ -9,7 +9,7 @@ for tc in range(1, T+1):
     N = int(input())
     cards = map(int, input())
     # print(cards)
-    tmp = [0] * 10
+    tmp = [0] * 10 # 카드 개수 체크할 배열
     for card in cards:
         tmp[card] += 1
 

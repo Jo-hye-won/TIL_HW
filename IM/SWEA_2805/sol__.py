@@ -35,29 +35,29 @@
 # 52212
 # """
 #
-# T = int(input())
-# for tc in range(1, T + 1):
-#     # 입력
-#     # N : 농장의 길이
-#     N = int(input())
-#     # arr : 농장 수확물 배열
-#     arr = [list(map(int, input())) for _ in range(N)]
-#
-#     # 로직
-#     # 누적 변수
-#     total = 0
-#     M = N // 2 # 중간값
-#     k = 0
-#     for i in range(N):
-#         for j in range(M - k, M + k + 1):
-#             total += arr[i][j]
-#         if i <= N // 2:
-#             k += 1
-#         else:
-#             k -= 1
-#
-#     # 출력
-#     print(f"#{tc} {total}")
+T = int(input())
+for tc in range(1, T + 1):
+    # 입력
+    # N : 농장의 길이
+    N = int(input())
+    # arr : 농장 수확물 배열
+    arr = [list(map(int, input())) for _ in range(N)]
+
+    # 로직
+    # 누적 변수
+    total = 0
+    M = N // 2 # 중간값
+    k = 0
+    for i in range(N):
+        for j in range(M - k, M + k + 1):
+            total += arr[i][j]
+        if i <= N // 2:
+            k += 1
+        else:
+            k -= 1
+
+    # 출력
+    print(f"#{tc} {total}")
 
 
 """
