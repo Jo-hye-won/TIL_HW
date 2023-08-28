@@ -15,7 +15,7 @@ for tc in range(1, T+1):
         for j in range(N):
             if omok[i][j] == 'o':
                 five += 1
-            if omok[i][j] == '.':
+            if omok[i][j] == '.':  # .을 만나면 five값 0으로 초기화 되야 한다
                 five = 0
             if five >= success:
                 result = 'YES'

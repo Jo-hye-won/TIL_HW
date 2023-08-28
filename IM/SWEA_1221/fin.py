@@ -13,7 +13,7 @@ for _ in range(1, T+1):
     N = len(num_ls)
     for i in range(N):
         ls.append(numbers.index(num_ls[i]))
-
+    # print(ls)
     ls.sort()
 
     for j in range(N):
