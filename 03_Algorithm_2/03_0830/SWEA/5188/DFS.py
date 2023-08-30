@@ -22,7 +22,6 @@ def DFS(x, y, acc):
             DFS(x+1, y, acc + arr[x+1][y])
 
 
-
 T = int(input())
 
 for tc in range(1, T+1):
