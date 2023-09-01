@@ -11,7 +11,7 @@
 # ```
 '''
 선택정렬함수(SelectionSort)를 재귀적 알고리즘으로 작성해 보시오.
-'''
+
 f(0, N, arr)
 
 f(i, N, arr)
@@ -20,7 +20,7 @@ f(i, N, arr)
     pass
         # 최소값을 arr[i]에 옮겨놓기
         # f(i+1, N, arr)
-
+'''
 T = int(input())
 
 

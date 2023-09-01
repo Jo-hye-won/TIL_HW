@@ -8,7 +8,7 @@ def f(i, N, key, arr):  # i = 현재 상태, N = 목표, key = 찾고자 하는 
     elif arr[i] == key:
         return 1
     else:
-        return f(i + 1, N, key, arr)
+        return f(i + 1, N, key, arr)  # return값이 오고있으면 그 값을 그냥 전달해주면 된다!
 
 
 N = 5

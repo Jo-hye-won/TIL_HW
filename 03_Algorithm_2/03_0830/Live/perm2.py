@@ -1,10 +1,10 @@
 
 # baby-gin 검사
 
-def f(i, N, K): # i = 이전에 고른 개수 , N개에서 K개를 고르는 순열
+def f(i, N, K):  # i = 이전에 고른 개수, N개에서 K개를 고르는 순열
     global cnt
     # print(i,'i')
-    if i == K: # 순열 완성 :K개를 모두 고른 경우
+    if i == K:  # 순열 완성 :K개를 모두 고른 경우
         cnt += 1
         print(cnt, p, used)
         return
