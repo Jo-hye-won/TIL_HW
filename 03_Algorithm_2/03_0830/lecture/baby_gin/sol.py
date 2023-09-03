@@ -17,7 +17,6 @@ def perm(row, chosen):
         tmp = []
         for i in chosen:
             tmp.append(chosen[i])
-
         print(chosen)
         return
 
