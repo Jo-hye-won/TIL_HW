@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Position</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 1500px;
+    }
+
+    .container {
+      /* 명확한 relative부모를 정해주기 위해서 기준점을주게 되면 
+      absolute가 이걸(static이 아닌 부모) 기준으로 움직인다 */
+      position: relative;
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+    }
+
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+    }
+
+    .static {
+      position: static; /* 기본값 */
+      background-color: lightcoral;
+    }
+
+    .absolute {
+      position: absolute;
+      background-color: lightgreen;
+      
+      /* 위에 relative없었다면 
+      찾다찾다가 마지막 부모인 바디를 기준으로 움직이게 됨  */
+      top: 100px;
+      left: 100px;
+    }
+
+    .relative {
+      /* 본인의 static시절의 위치를 기준으로 */
+      position: relative;
+      background-color: lightblue;
+      /* 우측하단으로 이동 */
+      top: 100px;
+      left: 100px;
+    }
+
+    .fixed {
+      position: fixed;
+      background-color: gray;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box static">Static</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box relative">Relative</div>
+    <div class="box fixed">Fixed</div>
+  </div>
+</body>
+
+</html>

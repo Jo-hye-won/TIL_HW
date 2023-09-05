@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: blue;
+            font-size: xx-large;
+            /* 자손 결합자 사용 */
+        }
+
+        div>p {
+            color: crimson;
+            font-size: xx-large;
+            /* 자식 결합자 사용 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>자식</p>
+        <ul>
+            <p>자손</p>
+        </ul>
+        <p>자식</p>
+    </div>
+</body>
+
+</html>
