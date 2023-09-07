@@ -1,0 +1,14 @@
+/* index.css 외부참조하기 위한 css파일 
+너비와 높이는 상속되지 않음*/
+.nav-box{
+  width: 90px;
+  height: 100px;
+  padding: 10px;
+  font-style: oblique;
+  
+}
+
+
+.btn-height{
+  height: 100px;
+}
