@@ -5,7 +5,7 @@
 - 안쪽 여백(Padding) : 콘텐츠 주위에 위치하는 공백 영역
 - 테두리(Border) : 콘텐츠와 패딩을 감싸는 테두리 영역
 - 외부 간격(Margin) : 박스와 외부요소 사이의 간격
-                                                      으로 구성되는 개념
+    으로 구성되는 개념
 
 
 > margin-left: auto; : 오른쪽 정렬 됨    
@@ -45,7 +45,7 @@
 
 ## 기타 display 속성
 ### inline-block
-- inline과 blokc 요소 사이의 중간 지점을 제공하는 display값
+- inline과 block 요소 사이의 중간 지점을 제공하는 display값
 - block 요소의 특징을 가짐
   - width 및 height 속성 사용 가능
   - padding, margin 및 border로 인해 다른 요소가 밀려남
