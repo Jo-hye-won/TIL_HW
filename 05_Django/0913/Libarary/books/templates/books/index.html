@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+  도서관 BOOK_LIST
+{% endblock %}
+
+{% block content %}
+  <h1> 도서 관리 서비스 </h1>
+  {% for book in book_list %}
+    <h3>작성자 : <a href="{% url "books:author" book.author %}">{{book.author}}</a></h3>
+    <p>작품 : {{book.book_list}}</p>
+  {% endfor %}
+  
+
+
+{% endblock content %}
+  
+
+
+
+

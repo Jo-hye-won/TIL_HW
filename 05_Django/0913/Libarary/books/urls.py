@@ -4,5 +4,5 @@ from . import views
 app_name = 'books'
 urlpatterns = [
     path('',views.find, name = 'index'),
-    path('<str:author>/', views.author, name='author_book')
+    path('<str:author>/', views.author, name='author')
 ]
