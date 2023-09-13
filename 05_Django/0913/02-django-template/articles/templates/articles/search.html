@@ -1,0 +1,14 @@
+{% extends "articles/base.html" %}
+
+{% block content %}
+  <form action="https://search.naver.com/search.naver/" method='GET'>
+    <h1>fake naver</h1>
+    <label for="message">검색어: </label>
+    {% comment %} input타입은 닫는태그 불필요 {% endcomment %}
+    <input type="text" name="query" id="message">
+    {% comment %} 내가 입력하는거 서버로 전송  {% endcomment %}
+    <input type="submit">
+  </form>
+
+{% endblock content %}
+

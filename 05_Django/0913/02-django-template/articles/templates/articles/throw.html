@@ -1,0 +1,13 @@
+{% extends "articles/base.html" %}
+
+{% block content %}
+<form action="/catch/" method='GET'>
+  <h1>Throw</h1>
+  <label for="message">검색어: </label>
+  <input type="text" name="message" id="message">
+  <input type="submit">
+</form>
+{% endblock content %}
+
+
+
