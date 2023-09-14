@@ -8,12 +8,14 @@ def find(request):
   {'author': '남영로', 'book_list': ['옥루몽', '옥련몽']}, 
   {'author': '작자 미상', 'book_list': ['장화홍련전', '가락국 신화', '온달 설화']}, 
   {'author': '임제', 'book_list': ['수성지', '백호집', '원생몽유록']}
-]
+    ]
+    
     context = {
         'book_list' : book_list
     }
 
     return render(request, 'books/index.html', context)
+
 
 def author(request, author):
     context = {
