@@ -8,9 +8,10 @@
   <title>Document</title>
   <style>
     .card {
-      width: 80%;
+      width: 100%;
       border: 10px solid red;
       display: flex;
+      flex-direction:row-reverse;
       flex-wrap: wrap;
     }
 
@@ -20,13 +21,15 @@
     }
 
     .thumbnail {
-      flex-basis: 700px;
-      flex-grow: 1;
+      flex-basis: 100px;
+      flex-grow: 3;
+      /* flex-direction: row-reverse; */
     }
 
     .content {
-      flex-basis:350px;
+      flex-basis:50px;
       flex-grow: 1; 
+      /* flex-direction: row-reverse; */
     }
   </style>
 </head>
