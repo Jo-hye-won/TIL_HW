@@ -9,6 +9,7 @@ def quick_sort(arr):
         for i in range(1, len(arr)):
             if arr[i] > pivot:
                 right.append(arr[i])
+                print(right)
             else:
                 left.append(arr[i])
         return [*quick_sort(left), pivot, *quick_sort(right)]
