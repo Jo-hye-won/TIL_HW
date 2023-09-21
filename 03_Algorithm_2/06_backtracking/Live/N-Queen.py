@@ -4,7 +4,7 @@ def check(x):
     for i in range(x):
         if row[x] == row[i]:
             return False
-        if abs(row[x]-row[i]) == x -i:
+        if abs(row[x]-row[i]) == x - i:
             return False
     return True
 

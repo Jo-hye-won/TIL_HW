@@ -25,9 +25,9 @@ def cal(arr, left, right):
                 arr[i], arr[j] = arr[j], arr[i]
         j += 1
     arr[i + 1], arr[right] = arr[right], arr[i + 1]
-    print(left, right)
-    print(arr)
+    # print(left, right)
+    # print(arr)
     return i + 1
 
 nums = [23, 12, 77, 12, 60, 32, 1]
-quick_sort(nums, 0, len(nums)-1)
+print(quick_sort(nums, 0, len(nums)-1))
