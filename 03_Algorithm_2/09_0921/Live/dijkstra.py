@@ -29,14 +29,14 @@ n, m = map(int, input().split())
 
 # 인접리스트
 graph = [[] for i in range(n)]
-# 도착점, 가중치 가지고 있ㅇ야 함
+# 도착점, 가중치 가지고 있어야 함
 for _ in range(m):
     f, t, w = map(int, input().split())
-    graph[f].append([t,w])
+    graph[f].append([t, w])
 
 
 # 1. 누적 거리를 계속 저장
-INF = int(1e9) #최대값으로 1억 - 대충 엄청 큰 수
+INF = int(1e9) # 최대값으로 1억 - 대충 엄청 큰 수
 distance = [INF] * n
 
 def dijkstra(start):

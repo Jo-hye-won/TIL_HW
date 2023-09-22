@@ -39,5 +39,5 @@ for tc in range(1, T+1):
     # 비교 대상군
     result = sum(sum(arr, []))
     permutation(0, 0)
-    print(result)
+    print(f'#{tc} {result}')
 

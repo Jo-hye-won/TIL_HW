@@ -30,6 +30,7 @@ for tc in range(1, T+1):
     # 비교 대상군 -> 0 ( 최댓값을 구할 것이기 때문에, 점점 커질듯)
     result = 0
     arr = [list(map(lambda x: int(x)/100, input().split())) for _ in range(N)]
+    print(arr)
     perm(0, 1)
     # print(result)
     result = result*100
