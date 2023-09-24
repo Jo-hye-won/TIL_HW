@@ -26,7 +26,7 @@ for tc in range(1, T+1):
     # print(arr)
     visited = [0] * N
     result = sum(sum(arr, []))
-    # print(result)
+    print(result)
     permutation(0, 0)
     print(f'#{tc} {result}')
 

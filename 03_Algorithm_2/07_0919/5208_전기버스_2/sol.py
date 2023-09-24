@@ -15,7 +15,7 @@ def search(r, acc, gas):
         if acc < result:
             result = acc
     else:
-        if gas: # 가스가 있을 때만! 없는데 가면 안돼ㅋㅋㅋㅋ
+        if gas:  # 가스가 있을 때만! 없는데 가면 안돼ㅋㅋㅋㅋ
             # 충전 안한고 다음칸 가기
             search(r+1, acc, gas - 1)
         # 충전 하고 다음칸 가기

@@ -1,5 +1,5 @@
 import sys
-# sys.stdin = open('input.txt')
+# sys.stdin = open('question.txt')
 
 T = int(input())
 
