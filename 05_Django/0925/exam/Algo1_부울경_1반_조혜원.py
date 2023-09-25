@@ -11,4 +11,5 @@ for tc in range(1, T+1):
     result = ''
     for char in data:
         result += hex_to_dec[char] ^ hex_to_dec[key][2:].upper()
-    print(result)
+    print(f'#{result}')
+
