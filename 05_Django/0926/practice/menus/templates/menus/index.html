@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% comment %} extends 태그는 항상 1번 라인에 작성!  {% endcomment %}
+{% block content %}
+  <h1> INDEX PAGE </h1>
+  <a href="{% url "menus:new"%}">CREATE</a>
+  <hr>
+  <ul>
+    <!--
+      context dict 에 잇는 menus: menus  -->
+    {% for menu in menus %}
+      <li>
+        <p>{{menu.pk}}번째 메뉴</p>
+        <p>{{menu.name}}</p>
+        <p>{{menu.price}}원</p>
+      </li>
+    {% endfor %}
+
+
+  </ul>
+
+{% endblock content %}
