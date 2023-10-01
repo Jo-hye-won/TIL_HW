@@ -1,155 +1,24 @@
 '''
-$ python -m venv vnev
-
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
 $ python -m venv venv
 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
 $ source venv/Scripts/Activate
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ pip install django ipython django-extensions
-Collecting django
-  Using cached Django-4.2.5-py3-none-any.whl (8.0 MB)
-Collecting ipython
-  Using cached ipython-8.15.0-py3-none-any.whl (806 kB)
-Collecting django-extensions
-  Using cached django_extensions-3.2.3-py3-none-any.whl (229 kB)
-Collecting tzdata
-  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
-Collecting asgiref<4,>=3.6.0
-  Using cached asgiref-3.7.2-py3-none-any.whl (24 kB)
-Collecting sqlparse>=0.3.1
-  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
-Collecting matplotlib-inline
-  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
-Collecting stack-data
-  Using cached stack_data-0.6.2-py3-none-any.whl (24 kB)
-Collecting jedi>=0.16
-  Using cached jedi-0.19.0-py2.py3-none-any.whl (1.6 MB)
-Collecting backcall
-  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
-Collecting pickleshare
-  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
-Collecting prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30
-  Using cached prompt_toolkit-3.0.39-py3-none-any.whl (385 kB)
-Collecting pygments>=2.4.0
-  Using cached Pygments-2.16.1-py3-none-any.whl (1.2 MB)
-Collecting traitlets>=5
-  Using cached traitlets-5.10.0-py3-none-any.whl (120 kB)
-Collecting decorator
-  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
-Collecting colorama
-  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
-Collecting exceptiongroup
-  Using cached exceptiongroup-1.1.3-py3-none-any.whl (14 kB)
-Collecting typing-extensions
-  Downloading typing_extensions-4.8.0-py3-none-any.whl (31 kB)
-Collecting parso<0.9.0,>=0.8.3
-  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
-Collecting wcwidth
-  Using cached wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
-Collecting executing>=1.2.0
-  Using cached executing-1.2.0-py2.py3-none-any.whl (24 kB)
-Collecting pure-eval
-  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
-Collecting asttokens>=2.1.0
-  Using cached asttokens-2.4.0-py2.py3-none-any.whl (27 kB)
-Collecting six>=1.12.0
-  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-Installing collected packages: wcwidth, pure-eval, pickleshare, executing, backcall, tzdata, typing-extensions, traitlets, sqlparse, six, pygments, prompt-toolkit, parso, exceptiongroup, decorator, colorama, matplotlib-inline, jedi, asttokens, asgiref, stack-data, django, ipython, django-extensions
-Successfully installed asgiref-3.7.2 asttokens-2.4.0 backcall-0.2.0 colorama-0.4.6 decorator-5.1.1 django-4.2.5 django-extensions-3.2.3 exceptiongroup-1.1.3 executing-1.2.0 ipython-8.15.0 jedi-0.19.0 matplotlib-inline-0.1.6 parso-0.8.3 pickleshare-0.7.5 prompt-toolkit-3.0.39 pure-eval-0.2.2 pygments-2.16.1 six-1.16.0 sqlparse-0.4.4 stack-data-0.6.2 traitlets-5.10.0 typing-extensions-4.8.0 tzdata-2023.3 wcwidth-0.2.6
-WARNING: You are using pip version 22.0.4; however, version 23.2.1 is available.
-You should consider upgrading via the 'C:\Users\SSAFY\Desktop\TIL_HW\05_Django\0925\venv\Scripts\python.exe -m pip install --upgrade pip' command.
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ pip freeze > requirements.txt
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ django-admin startproject crud .
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
-$ ls
-crud/  exam/  manage.py*  README.md  requirements.txt  venv/
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ python manage.py runserver
-Watching for file changes with StatReloader
-Performing system checks...
 
-System check identified no issues (0 silenced).
-
-You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
-Run 'python manage.py migrate' to apply them.
-September 25, 2023 - 12:12:16
-Django version 4.2.5, using settings 'crud.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
-[25/Sep/2023 12:12:30] "GET / HTTP/1.1" 200 10664
-Not Found: /favicon.ico
-[25/Sep/2023 12:12:31] "GET /favicon.ico HTTP/1.1" 404 2108
-
-(venv)
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
 $ python manage.py startapp articles
-(venv)
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ python manage.py makemigrations
-Migrations for 'articles':
-  articles\migrations\0001_initial.py
-    - Create model Articles
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ python manage.py migrate
-Operations to perform:
-  Apply all migrations: admin, articles, auth, contenttypes, sessions
-Running migrations:
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying articles.0001_initial... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying auth.0008_alter_user_username_max_length... OK
-  Applying auth.0009_alter_user_last_name_max_length... OK
-  Applying auth.0010_alter_group_name_max_length... OK
-  Applying auth.0011_update_proxy_permissions... OK
-  Applying auth.0012_alter_user_first_name_max_length... OK
-  Applying sessions.0001_initial... OK
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ python manage.py createsuperuser
-Username (leave blank to use 'ssafy'): admin
-Email address: 
-Password: 
-Password (again):
-Error: Your passwords didn't match.
-Password: 
-Password (again):
-Error: Your passwords didn't match.
-Password: 
-Password (again):
-Error: Your passwords didn't match.
-Password: 
-Password (again):
-Error: Your passwords didn't match.
-Password: 
-Password (again):
-The password is too similar to the username.
-This password is too short. It must contain at least 8 characters.
-This password is too common.
-Bypass password validation and create user anyway? [y/N]: y
-Superuser created successfully.
-(venv) 
-SSAFY@DESKTOP-MDJG1NJ MINGW64 ~/Desktop/TIL_HW/05_Django/0925 (master)
+
 $ python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
