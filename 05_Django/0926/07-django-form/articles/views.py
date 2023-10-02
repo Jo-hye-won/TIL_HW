@@ -32,10 +32,10 @@ def create(request):
     if request.method == 'POST':
         #     create 로직
         form = ArticleForm(request.POST)
-        # 유효성 검사
+        # 유효성 검사 진행
         # 유효성 검사가 통과된 경우 
         if form.is_valid():
-            article = form.save()
+            article = form.save() # save하면 리턴값이 있다
             return redirect('articles:detail', article.pk)
         
     # 요청의 메서드가 POST가 아니라면(new)
@@ -45,7 +45,7 @@ def create(request):
     context = {
         'form': form,
     }
-    return render(request, 'articles/create.html', context)
+    return render(request, 'articles/new.html', context)
     
     
     # title = request.POST.get('title')
@@ -83,8 +83,7 @@ def update(request, pk):
     context = {
         'form' : form,
     }
-    
     # article.title = request.POST.get('title')
     # article.content = request.POST.get('content')
     # article.save()
-    return redirect('articles:detail', )
+    return redirect(request, 'articles/edit.html', context)

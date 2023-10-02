@@ -7,7 +7,6 @@ def index(request):
     articles = Article.objects.all()
     context = {
         'articles': articles,
-        
     }
     return render(request, 'articles/index.html', context)
 
@@ -47,3 +46,20 @@ def delete(request, pk):
     # 조회한 게시글을 삭제
     article.delete()
     return redirect('articles:index')
+
+def edit(request):
+    article = Article.objects.get(pk=pk)
+    contect = {
+        'article' : article,
+    }
+    return render(request, 'articles/edit.html')
+
+def update(request):
+    title = request.POST.get('title')
+    content = request.POST.get('content')
+    # 수정하고자 하는 게시글을 조회
+    article = Article.objects.get(pk=pk)
+    article.content = content
+    article.save()
+
+    return redirect('articles:detail', article.pk)
