@@ -28,9 +28,8 @@ def detail(request, pk):
 
 
 def create(request):
-    # if 요청의 메서드가 POST라면: ~ / else: / new로직
-    if request.method == 'POST':
-        #     create 로직
+    # if 요청의 메서드가 POST라면: ~ (create 로직)
+    if request.method == 'POST': 
         form = ArticleForm(request.POST)
         # 유효성 검사 진행
         # 유효성 검사가 통과된 경우 
@@ -38,10 +37,12 @@ def create(request):
             article = form.save() # save하면 리턴값이 있다
             return redirect('articles:detail', article.pk)
         
-    # 요청의 메서드가 POST가 아니라면(new)
+    # 요청의 메서드가 POST가 아니라면(new) else: / new로직
     else:
         form = ArticleForm()    
         # 유효성 검사가 통과되지 않은 경우
+
+    # 공통된 것 들여쓰기 통해서 반복 안하게 만들기
     context = {
         'form': form,
     }
@@ -72,18 +73,28 @@ def edit(request, pk):
     return render(request, 'articles/edit.html', context)
 
 
-def update(request, pk):
+def update(request, pk): 
+    article = Article.objects.get(pk=pk)
     # 요청의 메서드가 POST라면(update)
     if request.method == 'POST':
-        article = Article.objects.get(pk=pk)
         form = ArticleForm(request.POST, instance=article)
         if form.is_valid:
             form.save()
             return redirect('articles:detail', article.pk)
+    
+    # 요청의 메서드가 POST가 아니라면(edit)
+    else:
+        form = ArticleForm(instance=article)
     context = {
+        'article': article,
         'form' : form,
     }
-    # article.title = request.POST.get('title')
-    # article.content = request.POST.get('content')
-    # article.save()
-    return redirect(request, 'articles/edit.html', context)
+    return render(request, 'articles/update.html', context)
+
+    # context = {
+    #     'form' : form,
+    # }
+    # # article.title = request.POST.get('title')
+    # # article.content = request.POST.get('content')
+    # # article.save()
+    # return redirect(request, 'articles/edit.html', context)

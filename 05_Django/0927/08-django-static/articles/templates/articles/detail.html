@@ -7,6 +7,7 @@
 </head>
 <body>
   {% if article.image %}
+    {% comment %} articles/detail.html {% endcomment %}
     <img src="{{ article.image.url }}" alt="#">
   {% endif %}
   <h2>DETAIL</h2>
