@@ -22,6 +22,7 @@ def detail(request, pk):
 
 def create(request):
     if request.method == 'POST':
+        # 이미지 파일은 POST로 안불러와지기 때문에 request.FILES로 불러와야 한다!
         form = ArticleForm(request.POST, request.FILES)
         if form.is_valid():
             article = form.save()
