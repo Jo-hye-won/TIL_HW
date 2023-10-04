@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>INDEX PAGE</h1>
+  {% for user in users  %}
+  <p>{{user.pk}}</p>
+  <p>{{user.username}}</p>
+  <p>{{user.password}}</p>
+  <p>{{user.score}}</p>
+  <form action="{% url "accounts:score_increase" user.pk %}" method='POST'>
+    {% csrf_token %}
+    <input type="submit" value="+">
+
+  </form>
+  <hr>
+  {% endfor %}
+  
+</body>
+</html>
