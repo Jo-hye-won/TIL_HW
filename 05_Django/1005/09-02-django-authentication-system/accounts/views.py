@@ -50,6 +50,8 @@ def delete(request):
     request.user.delete()
     return redirect('articles:index')
 
+from .forms import CustomUserChangeForm
+
 @login_required
 def update(request):
     if request.method == 'POST':
@@ -65,9 +67,12 @@ def update(request):
     return render(request,'accounts/update.html', context)
 
 @login_required
+
+# accounts/views.py
 def change_password(request, user_pk):
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
+        # form = PasswordCangeForm(user=request.user, data=request.POST)
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)

@@ -6,9 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>INDEX</h1>
+  <h1>Articles</h1>
   {% if request.user.is_authenticated %}
     <h3>{{ user.username }}님 안녕하세요!</h3>
+    <h2>Articels</h2>
   <form action="{% url "accounts:logout" %}" method="POST">
     {% csrf_token %}
     <input type="submit" value="LOGOUT">
