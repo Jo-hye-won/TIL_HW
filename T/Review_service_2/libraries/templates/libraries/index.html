@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+         <h2> Hello, {{request.user.username}} 💕</h2>
+         <a href="{% url "accounts:logout" %}">로그아웃</a>
+    {% else %}   
+       
+        <a href="{% url "accounts:login" %}">로그인</a>
+    {% endif %}
+
+    <h1>책 전체 목록</h1>
+    {% for book in books %}
+    <a href="{% url "libraries:detail" book.pk %}">
+        
+        제목 : {{book.title}}
+    </a>
+
+    <hr>
+
+    {% endfor %}
+
+
+</body>
+</html>

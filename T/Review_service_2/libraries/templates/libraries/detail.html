@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url "accounts:login" %}">로그인</a>
+    <h1>책 상세 정보</h1>
+    <p>등록번호 : {{book.pk}}</p>
+    <p>제목 : {{book.title}}</p>
+    <p>설명 : {{book.description}}</p>
+    {% comment %} <div back=""></div> {% endcomment %}
+
+    <hr>
+
+    <h3>리뷰 등록</h3>
+    <form 
+        action="{% url "libraries:review_create" book.pk %}"
+        method='POST'
+    >   
+    {% csrf_token %}
+    {{review_form.as_p}}
+    
+    <input type="submit" value='리뷰 작성'>
+    </form>
+    <hr>
+
+    <h3>리뷰 전체 목록</h3>
+    {% for review in book.review_set.all %}
+    <ul>
+        <li>
+           {{review.user}} - {{review.content}}_{{review.pk}}
+        </li>
+    </ul>
+    {% if review.user == request.user %}
+        <form action="{% url "libraries:review_delete" book.pk review.pk%}"
+              method="POST">
+        {% csrf_token %}
+        <input type="submit" value='🗑삭제🗑'>
+    </form>
+    {% endif %}
+  
+    
+    {% endfor %}
+    
+</body>
+</html>
