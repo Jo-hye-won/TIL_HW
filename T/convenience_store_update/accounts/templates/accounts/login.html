@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>로그인 해 주세요.</h3>
+    <a href="{% url "accounts:login" %}">[Login]</a>
+    <a href="{% url "accounts:signup" %}">[Sign up]</a>
+
+    <h2>LOGIN Page</h2>
+    <form action="{% url "accounts:login" %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="LOGIN">
+    </form>
+</body>
+</html>
+
+

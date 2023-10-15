@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> 전체 편의점 목록</h1>
+<a href="{% url "stores:create" %}">[신규 매장 등록]</a>
+
+{% for store in stores %}
+    <a href="{% url "stores:detail" store.pk %}">
+        <ul>
+            <li>
+                <p> 점장 : {{store.user}}</p>
+            </li>
+            <li>
+                <p> 주소 : {{store.address}}</p>
+            </li>
+        </ul>
+    </a>
+<hr>
+{% endfor %}
+{% endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h1>전체 편의점 목록</h1>
+     
+    {% for store in stores %}
+    <a href="{% url "stores:detail" store.pk%}">  
+    <ul>
+        <li>
+            <p>점장 : {{store.user.username}}</p>
+        </li> 
+        <li>
+            <p>주소 : {{store.address}}</p>
+        </li>
+    </ul>
+    </a>
+    <hr> 
+    {% endfor %}
+     {% for store in stores %}
+    <ul>
+        <li>
+            <a href="{% url "stores:detail" store.pk%}">
+                <p>점장 : {{store.user.username}}</p>
+            </a>
+        </li> 
+        <li>
+            <a href="{% url "stores:detail" store.pk%}">
+              <p>주소 : {{store.address}}</p>
+            </a>
+        </li>
+    </ul>
+    <hr>
+    {% endfor %}
+
+</body>
+</html>
+
+{% endcomment %}
