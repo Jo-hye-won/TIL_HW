@@ -31,8 +31,10 @@ def create(request):
         form = ArticleForm(request.POST)
         if form.is_valid():
             article = form.save(commit=False)
-            article.user = request.user
+            article.user = request.user # 현재 로그인 된 유저
+            
             form.save()
+            # article.save()해도 같음
             return redirect('articles:detail', article.pk)
     else:
         form = ArticleForm()
