@@ -3,7 +3,7 @@
 {% block content %}
 
 <h1>직원 전체 목록</h1>
-{% for staff in user %}
+{% for staff in staffs %}
 <ul>
     <li>
         <p> 이름 : {{staff.username}}</p>
@@ -19,9 +19,6 @@
 </ul>
 <hr>
 {% endfor %}
-
-
-
 {% endblock content %}
 
 

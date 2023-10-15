@@ -33,7 +33,8 @@ def signup(request):
     if request.method == "POST":
         form =CustomUserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
+            auth_login(request,user)
             return redirect('stores:index')
     else:
         form = CustomUserCreationForm()
@@ -44,8 +45,8 @@ def signup(request):
 
 
 def index(request):
-    user = User.objects.all()
+    staffs = User.objects.all()
     context = {
-        'user': user
+        'staffs': staffs,
     }
     return render(request, 'accounts/index.html', context)

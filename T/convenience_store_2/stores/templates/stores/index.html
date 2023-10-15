@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>매장 전체 목록</h1>
+<h1> 전체 편의점 목록</h1>
+<a href="{% url "stores:create" %}">[신규 매장 등록]</a>
+
 {% for store in stores %}
     <a href="{% url "stores:detail" store.pk %}">
         <ul>
@@ -15,7 +17,7 @@
     </a>
 <hr>
 {% endfor %}
-{% endblock  %}
+{% endblock content%}
 
 
 
