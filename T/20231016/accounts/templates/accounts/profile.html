@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>{{ user.username }} Profile</h1>
+  <div>
+    <div>이름 : {{ user.username }}</div>
+    <div>E-mail: {{ user.email }}</div>
+  </div>
+  <form action="{% url "accounts:resign" %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="탈퇴하기">
+  </form>
+  <a href="{% url 'accounts:edit' %}">프로필 변경하러 가기</a>
+  {% comment %} <form action="{% url "accounts:resign" %}" method="POST">
+    {% csrf_token %}
+    <button>탈퇴하기</button>
+  </form> {% endcomment %}
+{% endblock content %}
