@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from articles import views as articles_views
+from articles import views as articles_views
 # from articles import views as acocunts_views
 
 urlpatterns = [
@@ -24,5 +24,7 @@ urlpatterns = [
     # 앱마다 분리해서 관리
     # url로 요청이 들어왔을 때, 실행할 view 함수가 정의된 위치
     # 모든 app이 views로 통일되어있기 때문에...
-    path('accounts/', include('accounts.urls'))
+    path('accounts/', include('accounts.urls')),
+    path('', articles_views.main, name='main'),
+    path('articles/', include('articles.urls')),
 ]

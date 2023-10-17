@@ -7,8 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    {% if request.user.is_authenticated %}
+    <p>{{ request.user.username }}님! 환영합니다.</p>
+    
+    <form action="{% url "accounts:logout" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="로그아웃">
+    </form>
+
+    <a href="{% url "articles:create" %}">게시글 생성</a>
+    {% else %}
+        <a href="{% url "accounts:login" %}">로그인</a>
+        <a href="{% url "accounts:signup" %}">회원가입</a>
+    {% endif %}
     {% comment %} 각 문서마다 고유한 내용을 입력할 영역 {% endcomment %}
     {% comment %} block 영역 이름 {% endcomment %}
+
     {% block content %}
     {% endblock content %}
 

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% comment %} Django Template Language {% endcomment %}
+
+
+{% block content %}
+  <h1>회원가입 페이지</h1>
+  <!-- action 속성에 작성한 경로로 사용자가 작성한 데이터를 포함해서 요청 -->
+  <!-- 회원가입 요청 -> db CREATE 요청 -->
+  <form action="{% url "accounts:signup" %}" method="POST">
+    <!-- POST 요청일 때는 CSRF_Token을 같이 보내줘야 한다. -->
+    {% csrf_token %}
+    <!-- forms.py class ModelForm-->
+    {{ form }}
+    <input type="submit" value="signup">
+  </form>
+{% endblock content %}
+

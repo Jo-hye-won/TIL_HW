@@ -30,14 +30,26 @@ class Article(models.Model):
         # user1(게시글과 M:N 관계를 맺고 있는유저)는 class에 해당 관계에 대한
             # 변수 및 속성 정의한 적 없음
             # 그래서, django가 manager라고 하는 것을 만들어 줌
-            
+            # related manager -> user1.article_set.querySET
+        # related manager 이름 작성 규칙은 : 관계 맺고 있는 class 의 소문자_set
+    # related manager는 M:N만 있는게 아니다. (M:N은 서로가 서로를 1:N 하고 있는 것)
+
 
 
 # 중개 모델을 사용해서 M:N을 표현할 수도 있따.
 # 중개모델 사용시, User-> like_system -> Article
-articles = User.likesystem.set.all()
-for
-class like_system(models.Model):
+    # articles = User.likesystem_set.all()
+    # for article in articles:
+    #     article.title
+# class LikeSystem(models.Model):
+#     user = models.ForeignKey(settings.AUTH_USER_MODEL, 
+#                              on_delete=models.CASCADE)
+#     article = models.ForeignKey(Article, on_delete=models.CASCADE)
+
+class Comment(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              on_delete=models.CASCADE)
-    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, 
+                                on_delete=models.CASCADE)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
