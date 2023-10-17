@@ -1,0 +1,16 @@
+{% comment %} 모든 template이 사용할 베이스 {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} 각 문서마다 고유한 내용을 입력할 영역 {% endcomment %}
+    {% comment %} block 영역 이름 {% endcomment %}
+    {% block content %}
+    {% endblock content %}
+
+</body>
+</html>

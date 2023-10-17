@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{person.username}}님의 프로필</h1>
+        <div>
+            <div>
+                팔로잉 : {{person.followings.all|length}} / 팔로워 : {{person.followers.all|length}}
+            </div>
+            {% if request.user != person %}
+            <div>
+                {% comment %} person이 상대방 검색에 쓰임 {% endcomment %}
+                {% comment %} person.pk 쓸지 user.pk 쓸지 생각하기 {% endcomment %}
+                <form action="{% url "accounts:follow" person.pk %}" method="POST">
+                    {% csrf_token %}
+                    {% if request.user in person.followers.all %}
+                        <input type="submit" value="Unfollow">
+                    {% else %}
+                        <input type="submit" value="Follow">
+                    {% endif %}
+                </form>
+            </div>
+            {% endif %}
+        </div>
+    <hr>
+
+    <h2>작성한 게시글</h2>
+    {% comment %} _set.all() = 역참조 {% endcomment %}
+    {% for article in person.article_set.all %}
+    <p>{{article.title}}</p>
+    {% endfor %}
+
+    <hr>
+
+    <h2>작성한 댓글</h2>
+    {% comment %} 전체 댓글을 조회하는 것이 아니라 이사람이 작성한 것을 조회한다 {% endcomment %}
+    {% for comment in person.comment_set.all %}
+    <p>{{comment.content}}</p>
+    {% endfor %}
+    <hr>
+
+    <h2>좋아요를 누른 게시글</h2>
+    {% comment %} 다대다 관계에서의 역참조 {% endcomment %}
+    {% for article in person.like_articles.all %}
+        <p>{{article.title}}</p>
+    {% endfor %}
+    <hr>
+    
+</body>
+</html>
