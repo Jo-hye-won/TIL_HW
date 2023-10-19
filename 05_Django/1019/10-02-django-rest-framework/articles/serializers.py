@@ -8,6 +8,12 @@ class ArticleListSerializer(serializers.ModelSerializer):
         fields = ('id', 'title', 'content',)
 
 
+# 댓글 만들거나 상세내용 확인하거나 할때 필요한 정보 만들어주는 애
+    # 댓글 만들때, Article에 대한 정보도 필요함
+    # 근데 사용자가 입력하지는 않음
+
+# 
+
 # articles/serializers.py
 class CommentSerializer(serializers.ModelSerializer):
     class ArticleSerializer(serializers.ModelSerializer):
@@ -16,6 +22,10 @@ class CommentSerializer(serializers.ModelSerializer):
             fields = ('id','title',)
 
     # override
+    # article이라는 변수는?
+        # class Comment에 작성했던 article 변수에 해당하는 내용
+        # fields 에 작성될 article의 역할을 바꿔줌
+    
     article = ArticleSerializer(read_only=True)
 
     class Meta:
@@ -23,8 +33,12 @@ class CommentSerializer(serializers.ModelSerializer):
         fields = '__all__'
         # read_only_fields = ('article',)
 
-
+# 
 class ArticleSerializer(serializers.ModelSerializer):
+    # 나를 참조하고 있는 모든 댓글 정보 다 가져 오겠다.
+    # serializer의 목적 : 가지고 온 데이터를 사용자에게
+                        # 어떻게 보여줄 것인지 정의
+
     comment_set = CommentSerializer(many=True, read_only=True)
     comment_count = serializers.IntegerField(source='comment_set.count', read_only=True)
     class Meta:

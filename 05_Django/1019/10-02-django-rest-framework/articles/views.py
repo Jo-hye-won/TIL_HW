@@ -51,6 +51,7 @@ def comment_list(request):
     serializer = CommentSerializer(comments, many=True)
     return Response(serializer.data)
 
+
 # articles/views.py
 @api_view(['GET', 'DELETE', 'PUT'])
 def comment_detail(request, comment_pk):
@@ -66,6 +67,7 @@ def comment_detail(request, comment_pk):
 
     elif request.method == 'PUT':
         serializer = CommentSerializer(comment, data=request.data)
+        # HTTP 상 당연히 ???
         if serializer.is_valid(raise_exception=True):
             serializer.save() # comment 인스턴스에 article 있기 때문에 넘겨주지 않아도 된다 
             return Response(serializer.data)
@@ -76,9 +78,17 @@ def comment_create(request, article_pk):
     # article = Article.objects.get(pk=article_pk)
     article = get_object_or_404(Comment, pk=article_pk)  # 참고
     serializer = CommentSerializer(data=request.data)
+    # DRF가 아닌 일반 django에서 1:N 관계의 데이터 생성시와
+    # 로직이 변경되었다. 
     if serializer.is_valid(raise_exception=True):
+        # commit=False 라는 작업이 필요했다. -> save()의 역할이
+        # DB에 사용자가 작성한 데이터를 통해 생성, 수정하는 역할이었기 때문에
+            # 사용자가 필드에 작성하지 않은 참조 대상의 PK값을 저장할 수 없?????
+            # 무결성 에러가 발생했었따. 
+        # DRF 작업자가 생각해보니 어차피 serializer에 이미
+        # Model에 대한 정보가 다 포함되어 있는데 field와 적절한 데이터를
+        # 넘겨주면서 save()하면 편하지 않을까?
         serializer.save(article=article)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 # 조회는 가능하면서 유효성 검사에서는 빠져야 하는 친구들 => 읽기 전용 필드
-
