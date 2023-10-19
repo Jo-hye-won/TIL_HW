@@ -38,6 +38,7 @@ def article_detail(request, article_pk):
         #  partial=True => 데이터 일부분만 수정 가능
         serializer = ArticleSerializer(article, data=request.data, partial=True)
         # 예외가 발생했을 때의 옵션 리턴할수 있도록 raise_exception=True 하는 것 가능
+        # HTTP 상 당연히 해줘야 할 것들에 대한 추가 옵션
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
@@ -67,7 +68,7 @@ def comment_detail(request, comment_pk):
 
     elif request.method == 'PUT':
         serializer = CommentSerializer(comment, data=request.data)
-        # HTTP 상 당연히 ???
+        
         if serializer.is_valid(raise_exception=True):
             serializer.save() # comment 인스턴스에 article 있기 때문에 넘겨주지 않아도 된다 
             return Response(serializer.data)
@@ -88,7 +89,9 @@ def comment_create(request, article_pk):
         # DRF 작업자가 생각해보니 어차피 serializer에 이미
         # Model에 대한 정보가 다 포함되어 있는데 field와 적절한 데이터를
         # 넘겨주면서 save()하면 편하지 않을까?
-        serializer.save(article=article)
+        serializer.save(article=article) 
+        # article이라는 변수에 article 인스턴스 값 넣어줌
+         # article = 키워드 인자
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 # 조회는 가능하면서 유효성 검사에서는 빠져야 하는 친구들 => 읽기 전용 필드
