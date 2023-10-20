@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{person.username}}님의 프로필</h1>
+
+<hr><hr>
+
+    {% if request.user != person %}
+        <div>
+            <form action="{% url "accounts:follow" person.pk%}"method='POST'>
+                {% csrf_token %}
+                {% if request.user in person.followers.all %}
+                    <input type="submit" value='언팔로우'>
+                {% else %}
+                    <input type="submit" value='팔로우'>
+                {% endif %}
+            </form>
+        </div>
+    {% else %}
+    <p>자기 자신을 팔로잉 하는 바보는 없겠죠?</p>
+    {% endif %}
+
+<hr>
+  팔로잉 : {{poerson.followings.all|length}} / 팔로워 : {{person.followers.all|length}}
+<hr>
+
+<h4>✔  {{person.username}} 가 작성한 게시글</h4>
+{% for board in person.board_set.all %}
+    <div>🔴<a href="{% url "boards:detail" board.pk %}"> {{board.title}} </a></div>
+{% endfor %}
+
+<hr><hr>
+
+<h4>✔  {{person.username}} 가 작성한 댓글</h4>
+{% for comment in person.comment_set.all %}
+    <div><li>{{comment.content}}</li></div>
+{% endfor %}
+
+<hr><hr>
+
+<h4>✔ {{person.username}} 가 좋아요한 게시글</h4>
+{% for board in person.like_boards.all %}
+<div>❣<a href="{% url "boards:detail" board.pk %}"> {{board.title}} </a></div>
+{% endfor %}
+
+<hr><hr>
+<a href="{% url "boards:index" %}">[BACK]</a>
+{% endblock content %}
