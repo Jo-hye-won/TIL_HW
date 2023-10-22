@@ -55,13 +55,19 @@ ORDER BY ReportsTo;
 
 
 -- 03. Filtering data
-SELECT DISTINCT Country
-FROM customers
-ORDER BY Country;
+SELECT DISTINCT 
+  Country
+FROM 
+  customers
+ORDER BY 
+  Country;
 
-SELECT LastName, FirstName, City
-FROM customers
-WHERE City != 'Prague';
+SELECT 
+  LastName, FirstName, City
+FROM 
+  customers
+WHERE 
+  City != 'Prague';
 
 SELECT 
     LastName, FirstName, Company, Country
@@ -76,11 +82,11 @@ SELECT
 FROM 
     tracks
 WHERE 
---     100000 <= Bytes <= 500000;
-    Bytes BETWEEN 100000 AND 500000;
+    -- 100000 <= Bytes <= 500000;
+    -- Bytes BETWEEN 100000 AND 500000;
     -- AND 써도 됨!!
-    -- Bytes >= 100000
-    -- AND Bytes <= 500000
+    Bytes >= 100000
+    AND Bytes <= 500000;
 
 SELECT LastName, FirstName, Country
 FROM customers
@@ -113,16 +119,23 @@ LIMIT 7;
 -- LIMIT 4 OFFSET 3;
 
 
+
+
 -- 04. Grouping data
 SELECT Country, COUNT(*) 
 FROM customers
 GROUP BY Country;
 
 
-SELECT Composer, AVG(Bytes)
-FROM tracks
-GROUP BY Composer
-ORDER BY AVG(Bytes) DESC;
+SELECT 
+  Composer, 
+  AVG(Bytes)
+FROM 
+  tracks
+GROUP BY 
+  Composer
+ORDER BY 
+  AVG(Bytes) DESC;
 
 
 SELECT Composer, AVG(Milliseconds / 60000) AS avgOfMinute
@@ -130,15 +143,13 @@ FROM tracks
 WHERE avgOfMinute < 10
 GROUP BY Composer;
 
-
-
 -- 에러
 
 SELECT Composer, AVG(Milliseconds / 60000) AS avgOfMinute
 FROM tracks
 WHERE avgOfMinute < 10
 GROUP BY Composer; 
--- group by 하면 오류 뜸
+-- 이 순서로 GROUP BY 하면 오류 뜸
 
 
 -- 에러 해결

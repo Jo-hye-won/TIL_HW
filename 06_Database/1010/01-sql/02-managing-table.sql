@@ -1,37 +1,37 @@
-CREATE TABLE examples (
+CREATE TABLE example (
     LastName VARCHAR(50) NOT NULL,
     FirstName VARCHAR(50) NOT NULL
 );
 
-PRAGMA table_info('examples');
+PRAGMA table_info('example');
 
 ALTER TABLE
-    examples
+    example
 ADD COLUMN
-    Country VARCHAR(100) NOT NULL;
+    Country VARCHAR(100) NOT NULL DEFAULT 0;
 
 ALTER TABLE
-    examples
+    example
 ADD COLUMN
     Age INTEGER NOT NULL;
 
 ALTER TABLE
-    examples
+    example
 ADD COLUMN
-    Address VARCHAR(100) NOT NULL;
+    Address VARCHAR(100) NOT NULL DEFAULT 0;
 
 
 
 -- 컬럼 명 수정
 -- Address -> PostCode
-ALTER TABLE examples RENAME COLUMN Address TO PostCode;
+ALTER TABLE example RENAME COLUMN Address TO PostCode;
 
 
 -- 컬럼 삭제하기 
-ALTER TABLE examples DROP COLUMN PostCode;
+ALTER TABLE example DROP COLUMN PostCode;
 
-ALTER TABLE examples RENAME TO new_examples;
+ALTER TABLE example RENAME TO new_examples;
 DROP TABLE examples;
 
-ALTER TABLE new_examples RENAME TO examples;
+ALTER TABLE new_example RENAME TO examples;
 DROP TABLE examples;
