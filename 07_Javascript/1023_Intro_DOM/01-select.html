@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="heading">DOM 선택</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="content">content1</p>
+  <p class="content">content2</p>
+  <p class="content">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+  <script>
+    // 클래스 이름이 heading인 요소
+    // document.querySelector('.heading') 를 변수에 담아서 조작하는 것
+    // 프로그래밍 언어한테 이거 조작하려면 접근할 수있게 해야하니까  
+    // 객체로 넘겨주는이 DOM의 원리이다.
+    console.log(document.querySelector('.heading'))
+    console.log(document.querySelector('.content'))
+    console.log(document.querySelectorAll('.content'))
+    console.log(document.querySelectorAll('ul > li'))
+  </script>
+</body>
+
+</html>
