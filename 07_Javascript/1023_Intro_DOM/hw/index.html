@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>나의 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>안녕하세요, 제 이름은 <b id="name">홍길동</b>입니다.</h1>
+  
+  <img src="" alt="" width="200">
+  
+  <h2>소개</h2>
+  <p>저는 <b id="job">[직업/전공]</b>으로 일하고 있습니다. <b id="experience">[간단한 경력/학력]</b>을 가지고 있으며, <b>[특기 또는 관심 분야]</b>에 대해 꾸준히 공부하고 있습니다.</p>
+  
+  <h2>프로젝트</h2>
+  <ul id="list-group">
+    <li><b>프로젝트 1:</b> <span class="project-1">[프로젝트 1 제목]</span></li>
+    <li><b>프로젝트 2:</b> <span class="project-2">[프로젝트 2 제목]</span></li>
+    <li><b>프로젝트 3:</b> <span class="project-3">[프로젝트 3 제목]</span></li>
+  </ul>
+  
+  <h2>연락처</h2>
+  <p>이메일: <b id="email">[이메일 주소]</b></p>
+  <p>전화번호: <b id="phone">[전화번호]</b></p>
+  
+  <script>
+    //   const nameTag = document.querySelector('b')
+    // const jobTag = document.querySelectorAll('b')[1]
+    // // const jobTag = document.querySelector('#job') 이렇게 할 수도 있음
+    // const Tag = document.querySelectorAll('b')
+    // console.log(Tag)
+    // const experienceTag = document.querySelectorAll('b')[2]
+    // const emailTag = document.querySelectorAll('b')[7]
+    // const phoneTag = document.querySelectorAll('b')[8]
+    //     console.log(nameTag)
+    //     console.log(jobTag)
+    //     console.log(experienceTag)
+    //     console.log(emailTag)
+    //     console.log(phoneTag)
+        
+
+    // 변수 선언하는 방법
+    // 아이디가 name인 Element 자체를 name변수에 할당
+    const name = document.querySelector('#name')
+    const job = document.querySelector('#job')
+    const experience = document.querySelector('#experience')
+    const email = document.querySelector('#email')
+    const phone = document.querySelector('#phone')
+    // python 의 print와 같은 역할
+    console.log(name, job, experience, email, phone)
+
+
+    name.textContent = 'SSAFY'
+    job.textContent = 'SSAFY 10기 싸피셜'
+    experience.textContent = 'ssafy 교육훈련경험'
+    email.textContent = 'xxxxxx@naver.com'
+    phone.textContent = '012-3456-7890'
+
+    // CSS 선택자를 따라간다. 요소 자체를 선택할 수도 있다. 
+    // .body>li.textContent a:nth-childid(4)
+    const imgTag = document.querySelector('img')
+    // imgTag.src = 'profile.png'
+
+    // <img src = "profile.png">
+    imgTag.setAttribute('src', 'profile.png')
+
+    // <img src = "profile.png", alt = "기본이미지">
+    imgTag.setAttribute('alt', '기본 이미지')
+
+    // --------------------------------------hw4--------------------------------
+    const bodyTag = document.querySelector('body')
+    // 클래스를 추가하는 행위와 클래스 선택자(.)를 자주 혼동...
+    // add 메서드에 전달하는 인자(문자열) 을 클래스로 만드는 행위
+    // bodyTag가 가지고 있는 classList 변수에 [..., 'container']
+    bodyTag.classList.add('container')
+
+    const h1Tag = document.querySelector('h1')
+    h1Tag.classList.add('title')
+
+    imgTag.classList.add('img')
+
+    // 지금은 각 변수에 직접 할당했는데..
+    // 1. querySectorAll 로 모든 b태그를 NodeList로 가져온다.
+    // 2. NodeList 를 순회한다 -> 반복문
+    // 3. 각 노드들 중, id 값을 가지고 있는 경우에만 -> 조건문
+    // 4. classList에 highlight class 를 추가한다. 
+    name.classList.add('highlight')
+    job.classList.add('highlight')
+    experience.classList.add('highlight')
+    email.classList.add('highlight')
+    phone.classList.add('highlight')
+
+    // <p> 전화번호:
+    //    <b id="phone">[전화번호]</b>
+    // </p>
+    // p태그의 textContext -> SNS :
+    // p 태그의 자식태그 b 태그가 있고,
+    // b 태그의 id == 'SNS', b 태그의 textContent 는 SNS 정보
+    // p 태그랑, b 태그를 생성한다.
+    const pTag = document.createElement('p') // <p></p>
+    const bTag = document.createElement('b') // <b></b>
+    pTag.textContent = 'SNS : '
+
+    bTag.textContent = 'Name@SNS'
+    bTag.id = 'sns'
+    bTag.classList.add('highlight')
+
+    /*
+      <p>SNS :
+        <b id='sns' class='highlight'>
+          name@sns
+        </b>
+      </p>
+    */
+  // pTag의 자식요소로 bTag를 추가해주고
+    pTag.appendChild(bTag)
+  // pTag를 bodyTag의 자식요소로 추가해주기
+    bodyTag.appendChild(pTag)
+  </script>
+</body>
+</html>
