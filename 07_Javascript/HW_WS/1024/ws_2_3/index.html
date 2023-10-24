@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const scores = [90, 80, 70, 60, 40]
+    // for .. of 문으로 코드 작성
+    let scoresum = 0
+    let lengthh = 0
+    
+    for (score of scores) {
+      lengthh += 1
+      scoresum += score
+    }
+    console.log(lengthh)
+    console.log(scoresum)
+    let average = scoresum / lengthh
+    console.log(average)
+
+    // while문으로 코드 작성
+    while (lengthh > 0) {
+      lengthh -= 1
+      console.log(scores[lengthh])
+    }
+
+  </script>
+</body>
+</html>
