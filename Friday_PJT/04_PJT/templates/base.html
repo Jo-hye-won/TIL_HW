@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    {% block style %}
+    {% endblock style %}
+
+  </style>
+</head>
+<body>
+  <h1>Django 에서 데이터 사이언스 활용하기</h1>
+  <a href="{% url "problem1" %}">문제1</a>
+  <a href="{% url "problem2" %}">문제2</a>
+  <a href="{% url "problem3" %}">문제3</a>
+  <a href="{% url "problem4" %}">문제4</a>
+  {% block content %}
+  {% endblock content %}
+  </body>
+</html>
