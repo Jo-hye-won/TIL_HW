@@ -32,7 +32,7 @@ class CommentSerializer(serializers.ModelSerializer):
         # fields = '__all__'
         # read_only_fields = ('article',)
 
-# 
+# articles/serializers.py
 class ArticleSerializer(serializers.ModelSerializer):
     class CommentSerializerForArticle(serializers.ModelSerializer):
         class Meta:
