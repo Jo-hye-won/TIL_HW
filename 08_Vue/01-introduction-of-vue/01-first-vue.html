@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{greeting}}</h1>
+    <button @click="count++"> Count is: {{count}} </button>
+    <p>{{count}}</p>
+    <h3>{{count}}</h3>
+  </div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const { createApp, ref } = Vue  // JS => 객체 구조분해할당??
+  
+     // 단축 메서드
+    const app = createApp({
+      
+      setup() {    
+        const count = ref(0)
+        const greeting = ref('Hello vue!')
+
+        // 키-벨류 같으면 message:message안해도 됨
+        return {
+          count,
+          greeting
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
