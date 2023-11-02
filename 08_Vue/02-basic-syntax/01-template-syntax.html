@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- template syntax -->
+    <p>message: {{msg}}</p>
+    <div v-html="rawHtml"></div>
+    <div v-bind:id="dynamicId"></div>
+    <div>{{number +1}}</div>
+    <!-- 삼항 연산자 -->
+    <div>{{ok ? 'YES' : 'NO'}}</div> 
+    <!-- msg 뒤집기 -->
+    <div>{{msg.split('').reverse().join('')}}</div>
+    <div v-bind:id="`list-${id}`"></div>
+
+    <!-- directive -->
+    <p v-if="seen"> Hi there </p>
+    <a v-bind:href="myUrl"> Link </a>
+    <button v-on:click="doSomething"> Button </button>
+    <form v-on:submit.prevent="onSubmit">
+      <input type="submit">
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        const msg = ref('Hello')
+        const rawHtml = ref('<span style="color:blue">This should be red.</span>')
+        const dynamicId = ref('my-id') // null값을 넣으면 html에서 div가 사라짐
+        const number = ref(1)
+        const ok = ref(false)
+        const seen = ref(true)
+        const id = ref(100)
+        const myUrl = 'https://www.google.co.kr/'
+        const doSomething = function () {
+          console.log('button clicked')
+        }
+        const onSubmit = function () {
+          console.log('form submitted')
+        }
+        return {
+          msg,
+          rawHtml,
+          dynamicId,
+          seen,
+          number,
+          ok,
+          id,
+          myUrl,
+          doSomething,
+          onSubmit
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
