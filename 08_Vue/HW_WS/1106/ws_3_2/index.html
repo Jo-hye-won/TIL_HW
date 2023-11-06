@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <div id="app">
+    <h1>다양한 전시 정보</h1>
+    <label for="isActive">전시 중인 정보만 보기</label>
+    <input type="checkbox" id="isActive" v-model="isActive">
+    <ul>
+      <li v-for="(exhibition, index) in (isActive ? isActiveExhibition : exhibitions)">
+        <h3>{{exhibition.name}}  </h3>
+        <hr>
+        <p>{{exhibition.place}}</p>
+        <p>가격 :  {{exhibition.price}}  </p>
+        <hr>
+      </li>
+    </ul>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+  
+  const {createApp, ref, computed} = Vue
+
+  const app = createApp({
+    setup() {
+      const exhibitions = ref([
+        { name: '무라카미 다카시 : 무라카시좀비',
+          place: '부산 시립 미술관',
+          price: 1000,
+          isActive: '전시 중' // '전시 중' 이라고 해도 됨
+        },
+
+        { name: '마우라치오 카텔란 개인전',
+          place: '리움 미술관',
+          price: 30000,
+          isActive: '전시 중'
+        },
+
+        { name: '조선백자전',
+          place: '리움 미술관',
+          price: 30000,
+          isActive: '전시 중'
+        },
+
+        { name: '한국 실험미술 1960 - 1970',
+          place: '국립현대미술관',
+          price: 0,
+          isActive: '전시 중'
+        },
+
+        { name: '에드워드 호퍼 : 길 위에서',
+          place: '서울 시립 미술관',
+          price: 1000,
+          isActive: '전시 안해'
+        },
+        { name: '알렉산더 칼더 x 이우환',
+          place: '국제갤러리 서울점',
+          price: 15000,
+          isActive: '전시 안해'
+        }
+      ])
+      
+      // 나중에 값이 변했을때 (exhibitions의 각 객체들의 isActive의 값이 변했을 때 ) 변용할 수 없음
+      const isActiveExhibition = computed(() => {
+        const newArray = exhibitions.value.filter(item => {
+        // return 값에 넘겨줄 표현식의 결과값이 true인 item들을 모아서 
+        // 새로운 배열을 만든다. 
+        return item.isActive === '전시 중' // true
+      })
+      })
+
+      const      
+
+      // const isActive = ref('전시 중')
+      // const isActiveExhibition = computed(() => exhibitions.value.filter(exhibition => exhibition.isActive))
+      return {
+        exhibitions,
+        // isActive,
+        // isActiveExhibition
+      }
+    }
+  })
+  app.mount('#app')
+    /*
+			1. 주어진 전시 정보를 객체에 담고, 모든 객체를 하나의 배열에 할당하시오.
+      2. 전시 정보가 True인 경우만 filtering한 배열을 반환하는 isActiveExhibition computed 함수를 작성한다.
+      3. 전시 중인 정보만 볼 것인지 체크하는 변수 isActive를 작성한다.
+				- checkBox의 값과 양방향 바인딩 되어야 한다.
+        - isActive가 True인 경우, isActiveExhibition 배열을 화면에 렌더링한다.
+        - 아닌경우, 모든 객체 정보를 담고 있는 배열을 화면에 렌더링한다.
+      - 전시 정보
+	      무라카미 다카시 : 무라카시좀비
+	      부산 시립 미술관
+	      1000
+				전시 중
+	
+	      마우라치오 카텔란 개인전
+	      리움 미술관
+	      30000
+				전시 중
+	
+	      조선백자전
+	      리움 미술관
+	      30000
+				전시 중
+	
+	      한국 실험미술 1960 - 1970
+	      국립현대미술관
+	      0
+				전시 중
+	
+	      에드워드 호퍼 : 길 위에서
+	      서울 시립 미술관
+	      1000
+				전시 종료
+	
+	      알렉산더 칼더 x 이우환
+	      국제갤러리 서울점
+	      15000
+				전시 종료
+    */
+  </script>
+</body>
+</html>

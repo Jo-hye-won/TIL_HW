@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .is-selected {
+      background-color: #eee;
+    }
+
+    .is-required {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>다양한 전시 정보</h1>
+    <hr>
+    <ul>
+      <!-- 단방향 바인딩 -->
+      <li 
+      v-bind:class="{'is-selected': info.isselected}"
+      v-bind:id="info.enTitle"
+      >
+        <label for="selected">전시 선택</label>
+        <!-- type:chekbox input tag의 value는 false/true -->
+        <!-- 양방향 바인딩 -->
+        <input type="checkbox" name="selected" id="selected" v-model="info.isselected">
+        <!-- text와 바인딩 하고싶을 땐 tempalate syntax -->
+        <h3>{{info.koTitle}}</h3>
+        <p v-html="info.description"></p>
+        <hr>
+        <p>{{info.artMuseum}}</p>
+        <a :href="info.museumURL">전시장 바로가기</a>
+        <hr>
+        <p>입장권 구매하기</p>
+        <p>{{info.price}}</p>
+        <div>
+          <span :class="{'is-required': info.totalNum ===0 }">
+            인원 수 : {{info.totalNum}} 명 </span>
+          <!-- <button @click="decreaseNum">-</button> -->
+          <!-- <button @click="increaseNum">+</button> -->
+          <!-- disabled 속성에 true를 바인딩하면 비활성화 시키고  -->
+          <!-- 이떄, 바인딩되는 쪽에는 표현식 형ㅌ애로도 코드 작성 가능(조건문 쓸 수 있음) -->
+          <button :disabled="info.totalNum === 0" @click="info.totalNum--">-</button>
+          <button :disabled="info.totalNum >= 10" @click="info.totalNum++">+</button>
+        </div>
+        <hr>
+      </li>
+    </ul>
+    <p>총 입장료 : {{info.price * info.totalNum}} 원</p>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        const list = [1,2,3]
+        const info = ref({
+          koTitle: '모네 인사이드',
+          enTitle : 'monet-inside',
+          artMuseum : '예술의 전당',
+          museumURL : 'https://www.sac.or.kr/',
+          description :` <p> &lt;모네 인사이드&gt; 는 빛의 화가 <b>클로드 모네</b>가 남긴 소중한 명작들을 현대적 감각으로 재해석해 음악과 함께 감상하는 미디어아트 전시입니다. </p>`,
+          isSelected : false,
+          price : 1000,
+          totalNum : 0,
+        })
+        // const totalPrice = ref(0)
+
+
+        return {
+          info
+        }
+      }
+    })
+    app.mount('#app')
+
+
+    /*
+      - Vue3 CDN을 사용한다.
+      1. 새로운 app instance를 생성하여 아이디가 app인 container에 mount 하시오.
+      2. 전시 정보를 가지고 있는 객체를 생성한다. 전시 정보 객체가 가진 정보는 아래와 같다.
+        - koTitle : 모네 인사이드
+        - enTitle : monet-inside
+        - artMuseum : 예술의 전당
+        - museumURL : 'https://www.sac.or.kr/'
+        - description : <p> &lt;모네 인사이드&gt; 는 빛의 화가 <b>클로드 모네</b>가 남긴 소중한 명작들을 현대적 감각으로 재해석해 음악과 함께 감상하는 미디어아트 전시입니다. </p>
+        - isSelected : false
+        - price : 1000
+        - totalNum : 0
+      3. 단, 모든 값을 객체에 할당하여도 실습 1-3 단계까지의 모든 기능이 정상 작동할 수 있어야한다.
+    */
+  </script>
+</body>
+</html>
