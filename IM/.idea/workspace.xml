@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58d4260d-35eb-45b5-80ce-690d877e59ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SWEA_1206_view/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1206_view/fin2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1208_flatten/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1210/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1211/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1215/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1216/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1216/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1220/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1221/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/sol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/sol2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1258/sol3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1961/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1974/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_1979/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_2001_get_rid_of_fly/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_2805/fin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_4613/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA_4613/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_1208_flatten/flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_1210/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_1210/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_1210/sol2.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_1210/sol2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_1216/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_1216/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_1961/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_1961/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_2007/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_2007/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_2805/sol__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_2805/sol__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_4466/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_4466/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_4828_max_min/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_4828_max_min/sol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_4834_card/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_4834_card/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_4835_sumo/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_4835_sumo/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA_4835_sumo/review_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA_4835_sumo/review_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/sol.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2UNgWAoT9KUmrelbHMbvRwRfwTJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SWEA_1258" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hw\Desktop\TIL_HW\IM\SWEA_1258" />
+      <recent name="C:\Users\hw\Desktop\TIL_HW\IM\SWEA_1873" />
+      <recent name="C:\Users\hw\Desktop\TIL_HW\IM\SWEA_1211" />
+      <recent name="C:\Users\hw\Desktop\TIL_HW\IM\SWEA_1210" />
+      <recent name="C:\Users\hw\Desktop\TIL_HW\IM\4466" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.sol">
+    <configuration name="fin (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA_2805" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_2805/fin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fin" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA_2001_get_rid_of_fly" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_2001_get_rid_of_fly/fin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA_2007" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_2007/sol.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA_4466" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_4466/sol.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sol2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SWEA_2001_get_rid_of_fly" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SWEA_2001_get_rid_of_fly/sol2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sol" />
+        <item itemvalue="Python.fin (1)" />
+        <item itemvalue="Python.sol (1)" />
+        <item itemvalue="Python.fin" />
+        <item itemvalue="Python.sol2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58d4260d-35eb-45b5-80ce-690d877e59ec" name="Default Changelist" comment="" />
+      <created>1692785485198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692785485198</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

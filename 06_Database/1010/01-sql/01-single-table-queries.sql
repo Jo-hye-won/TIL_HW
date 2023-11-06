@@ -82,23 +82,24 @@ SELECT
 FROM 
     tracks
 WHERE 
-    -- 100000 <= Bytes <= 500000;
+    -- 100000 <= Bytes <= 500000;  -- 이건 안됨!! 
+  
     -- Bytes BETWEEN 100000 AND 500000;
-    -- AND 써도 됨!!
-    Bytes >= 100000
-    AND Bytes <= 500000;
+    -- AND 써도 됨!
+    -- Bytes >= 100000
+    -- AND Bytes <= 500000;
 
 SELECT LastName, FirstName, Country
 FROM customers
 WHERE 
-    Country IN ('Canada', 'Germany', 'France');
+    Country IN ( LIKE 'Cana%', 'Germa%', 'France');
     -- Country = 'Canada'
     -- OR Country = 'Germany'
     -- OR Country = 'France';
     
 SELECT LastName, FirstName
 FROM customers
-WHERE LastName LIKE '%son';
+WHERE LastName LIKE '%son' ;
 
 -- 자리수
 SELECT 
