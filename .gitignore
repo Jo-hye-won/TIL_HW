@@ -3,7 +3,21 @@ a.txt파일
 
 # 현재 폴더에 있는 01_python파일
 01_python/  (상대경로임)
+# Created by https://www.toptal.com/developers/gitignore/api/vue
+# Edit at https://www.toptal.com/developers/gitignore?templates=vue
 
+### Vue ###
+# gitignore template for Vue.js projects
+#
+# Recommended template: Node.gitignore
+
+# TODO: where does this rule come from?
+docs/_book
+
+# TODO: where does this rule come from?
+test/
+
+# End of https://www.toptal.com/developers/gitignore/api/vue
 
 https://www.toptal.com/developers/gitignore/   : 깃이그노어 경로만들어주는거
 ctrl+a ,ctrl+c 해서 전체 복사붙여넣기하기
