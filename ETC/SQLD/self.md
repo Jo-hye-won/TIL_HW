@@ -40,3 +40,13 @@ SELECT 절에서 JOIN 컬럼인 A.COL1을 B.COL1로 `대체할 수 있다.`
 ### NULLIF(인수1, 인수2)
 - 인수1과 인수2가 같으면 NULL을 반환하고 같지 않으면 인수1을 반환해주는 함수이다. 
 P. 156
+
+
+## DROP / TRUNCATE / DELETE
+![Alt text](image.png)
+###  DROP
+>  DDL / Rollback 불가능 / AUTO COMMIT / 테이블이 사용했던 STORAGE를 모두 RELEASE / 테이블의 정의 자체를 완전히 삭제함
+### TRUNCATE 
+>  DDL(일부 DML성격 가짐) / ROLLBACK 불가능 / AUTO COMMIT / 테이블이 사용했던 STORAGE중 최초 테이블 생성시 할당된 STORAGE만 남기고 RELEASE / 테이블을 최초 생성된 초기상태로 만듬
+### DELETE 
+> DML / COMMIT 이전 ROLLBACK 가능 / 사용자 COMMIT / 데이터를 모두 DELETE해도 사용했던 STORAGE는 RELEASE 되지 않음 / 데이터만 삭제 
