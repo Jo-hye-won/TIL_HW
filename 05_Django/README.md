@@ -94,4 +94,3 @@ INSTALEED_APPS = []
   
 4. 작성된 template을 사용자에게 반환하기 -> views에 정의한 함수의 return
    
-
